@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阳锦华的博客</title>
+  
+  <subtitle>godweiyang</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://bestyangjh.com/"/>
+  <updated>2019-11-24T11:36:59.013Z</updated>
+  <id>https://bestyangjh.com/</id>
+  
+  <author>
+    <name>韦阳</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>First</title>
+    <link href="https://bestyangjh.com/2019/11/24/first/"/>
+    <id>https://bestyangjh.com/2019/11/24/first/</id>
+    <published>2019-11-24T11:36:58.000Z</published>
+    <updated>2019-11-24T11:36:59.013Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://bestyangjh.com/2019/11/24/hello-world/"/>
+    <id>https://bestyangjh.com/2019/11/24/hello-world/</id>
+    <published>2019-11-24T10:54:48.229Z</published>
+    <updated>2019-11-24T10:54:48.229Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二零一七年终总结</title>
+    <link href="https://bestyangjh.com/2018/01/22/2017-conclusion/"/>
+    <id>https://bestyangjh.com/2018/01/22/2017-conclusion/</id>
+    <published>2018-01-22T04:32:09.000Z</published>
+    <updated>2020-02-05T02:49:15.709Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://bestyangjh.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
