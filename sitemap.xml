@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bestyangjh.com/about/index.html</loc>
+    
+    <lastmod>2020-03-12T09:06:38.734Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bestyangjh.com/2020/02/14/2019-nian-du-zong-jie/</loc>
     
-    <lastmod>2020-02-14T15:30:08.809Z</lastmod>
+    <lastmod>2020-02-16T09:39:40.970Z</lastmod>
     
   </url>
   
@@ -23,6 +30,13 @@
   </url>
   
   <url>
+    <loc>https://bestyangjh.com/categories/index.html</loc>
+    
+    <lastmod>2020-02-05T02:49:15.715Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bestyangjh.com/friends/index.html</loc>
     
     <lastmod>2020-02-05T02:49:15.715Z</lastmod>
@@ -37,23 +51,9 @@
   </url>
   
   <url>
-    <loc>https://bestyangjh.com/categories/index.html</loc>
-    
-    <lastmod>2020-02-05T02:49:15.715Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://bestyangjh.com/archives/index.html</loc>
     
     <lastmod>2020-02-05T02:49:15.714Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bestyangjh.com/about/index.html</loc>
-    
-    <lastmod>2020-02-05T02:49:15.713Z</lastmod>
     
   </url>
   
