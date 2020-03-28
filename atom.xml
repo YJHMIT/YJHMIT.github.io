@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-03-28T13:00:49.687Z</updated>
+  <updated>2020-03-28T13:44:54.101Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://bestyangjh.com/2020/03/22/springboot2.0/"/>
     <id>https://bestyangjh.com/2020/03/22/springboot2.0/</id>
     <published>2020-03-22T12:04:00.000Z</published>
-    <updated>2020-03-28T13:00:49.687Z</updated>
+    <updated>2020-03-28T13:44:54.101Z</updated>
     
     <summary type="html">
     
@@ -44,11 +44,36 @@
   </entry>
   
   <entry>
+    <title>IDEA+Springboot输出Hello World</title>
+    <link href="https://bestyangjh.com/2020/03/17/springboot1/"/>
+    <id>https://bestyangjh.com/2020/03/17/springboot1/</id>
+    <published>2020-03-17T02:04:00.000Z</published>
+    <updated>2020-03-28T13:59:08.082Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;尝试系统和细节的使用springboot的第一步&lt;/p&gt;
+&lt;h1 id=&quot;2020-03-17&quot;&gt;&lt;a href=&quot;#2020-03-17&quot; class=&quot;headerlink&quot; title=&quot;2020 03-17&quot;&gt;&lt;/a&gt;2020
+        
+      
+    
+    </summary>
+    
+      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2019年度总结</title>
     <link href="https://bestyangjh.com/2020/02/14/2019-nian-du-zong-jie/"/>
     <id>https://bestyangjh.com/2020/02/14/2019-nian-du-zong-jie/</id>
     <published>2020-02-14T14:44:00.000Z</published>
-    <updated>2020-03-15T11:45:56.166Z</updated>
+    <updated>2020-03-28T13:28:58.613Z</updated>
     
     <summary type="html">
     

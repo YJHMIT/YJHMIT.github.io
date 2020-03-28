@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bestyangjh.com/2020/03/17/springboot1/</loc>
+    
+    <lastmod>2020-03-28T13:59:08.082Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bestyangjh.com/2020/03/22/springboot2.0/</loc>
     
-    <lastmod>2020-03-28T13:00:49.687Z</lastmod>
+    <lastmod>2020-03-28T13:44:54.101Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://bestyangjh.com/2020/02/14/2019-nian-du-zong-jie/</loc>
     
-    <lastmod>2020-03-15T11:45:56.166Z</lastmod>
+    <lastmod>2020-03-28T13:28:58.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bestyangjh.com/friends/index.html</loc>
+    
+    <lastmod>2020-03-28T13:11:42.068Z</lastmod>
     
   </url>
   
@@ -52,13 +66,6 @@
   
   <url>
     <loc>https://bestyangjh.com/categories/index.html</loc>
-    
-    <lastmod>2020-02-05T02:49:15.715Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bestyangjh.com/friends/index.html</loc>
     
     <lastmod>2020-02-05T02:49:15.715Z</lastmod>
     

@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
-  <meta name="keywords" content="阳锦华 人工智能">
+  <meta name="keywords" content="阳锦华 biu~">
   <title>Yangjh&#39;life</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
@@ -196,6 +196,55 @@ spring.datasource.username=数据库的用户名spring.da</div>
           
             <a href="/tags/Mysql/">Mysql</a>&nbsp;
           
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2020/03/17/springboot1/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/loading.gif" alt="IDEA+Springboot输出Hello World"
+               class="index-img img-fluid rounded index-thumbnails">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2020/03/17/springboot1/">
+        <p class="h4 index-header">IDEA+Springboot输出Hello World</p>
+      </a>
+
+      <a href="/2020/03/17/springboot1/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">尝试系统和细节的使用springboot的第一步
+2020 03-17
+本次操作所需材料：*IDEA旗舰版(简单上手…
+IDEA神奇创建springboot项目，史上无敌讨厌的就是导包了。所以给各位摸到了一个自动导包的好方法。
+1.首先File-&gt;new-&gt;moudle,你会看到一个这亚子的界面
+2.然后正常下一步
+3.选择依赖，当然这可能是我初学一个很困扰的点，每次都不知道该选啥。,界面比较简单，就web就好了。
+4.然后我导包…嗯或许是版本跟不上的原因，也有time out这样的情况，所以
+5.导入maven依赖，这个也很强，添加了阿里镜像。首先，紧接着。省事儿许多。
+6.害，</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-17&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Springboot/">Springboot</a>&nbsp;
+          &nbsp;
+        
         
       </div>
     </div>
@@ -520,6 +569,56 @@ More info</div>
 
 
 
+
+  
+  
+    <script type="text/javascript">
+      //定义获取词语下标
+      var a_idx = 0;
+      jQuery(document).ready(function ($) {
+        //点击body时触发事件
+        $("body").click(function (e) {
+          //需要显示的词语
+          var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+          //设置词语给span标签
+          var $i = $("<span/>").text(a[a_idx]);
+          //下标等于原来下标+1  余 词语总数
+          a_idx = (a_idx + 1) % a.length;
+          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
+          //获取x和y的指针坐标
+          var x = e.pageX, y = e.pageY;
+          //在鼠标的指针的位置给$i定义的span标签添加css样式
+          $i.css({
+            "z-index": 999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": rand_color()
+          });
+          // 随机颜色
+          function rand_color() {
+            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+          }
+          //在body添加这个标签
+          $("body").append($i);
+          //animate() 方法执行 CSS 属性集的自定义动画。
+          //该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+          //详情请看http://www.w3school.com.cn/jquery/effect_animate.asp
+          $i.animate({
+            //将原来的位置向上移动180
+            "top": y - 180,
+            "opacity": 0
+            //1500动画的速度
+          }, 1500, function () {
+            //时间到了自动删除
+            $i.remove();
+          });
+        });
+      })
+      ;
+    </script>
+  
 
 
 
