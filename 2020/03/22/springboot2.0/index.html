@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    635 字
+                    1.1k 字
                   </span>
                 
 
@@ -147,7 +147,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      2 分钟
+                      4 分钟
                   </span>
                 
 
@@ -182,27 +182,33 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=407679465&auto=1&height=66"></iframe></div>
-
-<p>尝试系统和细节的使用springboot的第二步</p>
+              <p>尝试系统和细节的使用springboot的第二步</p>
 <h1 id="2020-03-22"><a href="#2020-03-22" class="headerlink" title="2020 03-22"></a>2020 03-22</h1><hr>
 <p>本次操作所需材料：<br>*IDEA旗舰版<br>*Phpstudy集成环境中的MySQL8.0.12<br>*Navicat Premium 12</p>
 <p><strong>目录结构</strong></p>
 <p>生成的项目中，resources文件夹下，static文件下放静态文件（css，js，html和图片），templates下存放controller默认访问的html文件。<br>6.pom.xml是为了添加依赖，application.propertiese文件是resources中自动生成的，配置数据信息。</p>
 <p>spring.datasource.username=数据库的用户名<br>spring.datasource.password=数据库登录密码<br>spring.datasource.url=jdbc:mysql://localhost:3306/数据库名称<br>spring.jpa.hibernate.ddl-auto=create</p>
 <p><strong>连接数据库</strong></p>
-<p>打开集成环境的MySQL8.0.12，在cmd中输入mysql -uroot -p,回车，输入密码。连接成功<br>！<a href="C:\Hexo\blog\source_posts\springboot\login.png" target="_blank" rel="noopener"></a></p>
-<p>容易遇到报错，在idea中连接数据库database失败：<br>Server returns invalid timezone. Go to ‘Advanced’ tab and set ‘serverTimezone’ property manually.是时区错误问题。mysql默认的是Utc时区，比北京时间晚八个小时。cmd命令行的拯救措施：<br>！<a href="C:\Hexo\blog\source_posts\springboot\test.png" target="_blank" rel="noopener"></a><br>之后连接成功<br>！<a href="C:\Hexo\blog\source_posts\springboot\success.png" target="_blank" rel="noopener"></a></p>
+<p>打开集成环境的MySQL8.0.12，在cmd中输入mysql -uroot -p,回车，输入密码。连接成功<br>！<a href="C:\Hexo\blog\source_posts\springboot\login.png" target="_blank" rel="noopener">avatar</a></p>
+<p>容易遇到报错，在idea中连接数据库database失败：<br>Server returns invalid timezone. Go to ‘Advanced’ tab and set ‘serverTimezone’ property manually.是时区错误问题。mysql默认的是Utc时区，比北京时间晚八个小时。cmd命令行的拯救措施：<br>！<a href="C:\Hexo\blog\source_posts\springboot\test.png" target="_blank" rel="noopener">avatar</a><br>之后连接成功<br>！<a href="C:\Hexo\blog\source_posts\springboot\success.png" target="_blank" rel="noopener">avatar</a></p>
 <p><strong>创建表单</strong></p>
-<p>连接数据库后创建表单，可以不用sql语句，直接创建表，记得选定主键。<br>！<a href="C:\Hexo\blog\source_posts\springboot\table.png" target="_blank" rel="noopener"></a><br>此处插入一句废话，我每次创建springboot的时候也不知道是为什么会出现@SpringBootApplication此注解爆红的情况，似乎是pom文件夹里starter版本不合导致的，所以2.2.5修改成2.2.2。在官网查询到了他的官方导入。<br>！<a href="C:\Hexo\blog\source_posts\springboot\dao.png" target="_blank" rel="noopener"></a><br>此刻即完成了建表的工作。可以打开cmd和navicat测试一下是否统一更新。<br>！<a href="C:\Hexo\blog\source_posts\springboot\1.png" target="_blank" rel="noopener"></a><br>！<a href="C:\Hexo\blog\source_posts\springboot\2.png" target="_blank" rel="noopener"></a></p>
+<p>连接数据库后创建表单，可以不用sql语句，直接创建表，记得选定主键。<br>！<a href="C:\Hexo\blog\source_posts\springboot\table.png" target="_blank" rel="noopener">avatar</a><br>此处插入一句废话，我每次创建springboot的时候也不知道是为什么会出现@SpringBootApplication此注解爆红的情况，似乎是pom文件夹里starter版本不合导致的，所以2.2.5修改成2.2.2。在官网查询到了他的官方导入。<br>！<a href="C:\Hexo\blog\source_posts\springboot\dao.png" target="_blank" rel="noopener">avatar</a><br>此刻即完成了建表的工作。可以打开cmd和navicat测试一下是否统一更新。<br>！<a href="C:\Hexo\blog\source_posts\springboot\1.png" target="_blank" rel="noopener">avatar</a><br>！<a href="C:\Hexo\blog\source_posts\springboot\2.png" target="_blank" rel="noopener">avatar</a><br>管理schemas的操作！<a href="C:\Hexo\blog\source_posts\springboot\5.png" target="_blank" rel="noopener">avatar</a></p>
+<p>创建表单也可以直接cmd命令行进行操作，就是过程较为繁琐，需要掌握MySQL的常用语句，但有个很大的好处是直接连接进入工程项目。不用重新连接database。也是为了避免时差的好方法。<br>！<a href="C:\Hexo\blog\source_posts\springboot\4.png" target="_blank" rel="noopener">avatar</a></p>
 <p><strong>源文件编写</strong></p>
+<p>写在之前：在resources—&gt;application.properties-&gt;添加连接池，配置数据库的基本信息。</p>
 <p>一般包括dao层，controller层，service层，entity层。<br>（1）dao层存放接口。全称为data access object，，接入数据库，一些对数据库的操作。写入接口中的方法都是void方法。</p>
 <p>（2）controller层存放控制台和前端界面的接口，这是项目中前后端交互的实际接口与dao层的接口（interface）不一样。controller层加入注解@RestController。</p>
-<p>（3）service层加入注解@service</p>
-<p>（4）entity层放入实体类，就是把对一个表的操作写在一个类里，通常属性是private。</p>
-<p>1.存放接口，添加注解引入对数据库的操作。之前创建项目时漏选了依赖，导致后续操作很麻烦。不过正好通过MyBatis的官网学到了些东西：<strong><a href="https://mybatis.org/mybatis-3/zh/statement-builders.html" target="_blank" rel="noopener">https://mybatis.org/mybatis-3/zh/statement-builders.html</a></strong></p>
-<p>4.创建实体类，还有个黑魔法的操作。Alt+insert，getter and setter ，Ctrl按住全选，ok———&gt;生成所有，操作方便舒服。强推。<br>！<a href="C:\Hexo\blog\source_posts\springboot\3.png" target="_blank" rel="noopener"></a></p>
+<p>（3）entity层放入实体类，就是把对一个表的操作写在一个类里，通常属性是private。</p>
+<p>1.存放接口，添加注解引入对数据库的操作。@mapper放在类之前方便扫描包。注解<strong>@Select</strong>，选择查询功能，<strong>@Update</strong>修改功能，<strong>@Insert</strong>插入增加功能，<strong>@Delete</strong>删除功能，<strong>Result</strong>用来与数据库的列名的，如果一样可以忽略。这是看同学CSDN发现的新功能….</p>
+<p>之前创建项目时漏选了依赖MyBatis，导致后续操作很麻烦。不过正好通过MyBatis的官网学到了些东西：<strong><a href="https://mybatis.org/mybatis-3/zh/statement-builders.html" target="_blank" rel="noopener">https://mybatis.org/mybatis-3/zh/statement-builders.html</a></strong></p>
+<p>2.此层创建的是类，<strong>@GetMapping</strong>的用法：<strong>@RequestMapping(method = RequestMethod.GET)</strong>的缩写。该注解将HTTP Get映射到特定的处理方法上。<strong>@Controller</strong>处理http请求，<strong>@RestController</strong>是@Controller和@ResponseBody的组合体，返回字符串和json数据。<strong>@RequestMapping</strong>配置Url映射，<strong>@PathVariable</strong>获取Url中的数据，<br><strong>@RequestParam</strong>获取请求参数的值。</p>
+<p>此层开始会使用<strong>@Autowried</strong>，private UserMapper usermapper；操作接口，请求路径。<img src="C:%5CHexo%5Cblog%5Csource_posts%5Cspringboot%5C8.png" srcset="/img/loading.gif" alt="avatar"></p>
+<p>3.创建实体类，还有个黑魔法的操作。Alt+insert，getter and setter ，Ctrl按住全选，ok—&gt;生成所有，操作方便舒服。强推。<br>！<a href="C:\Hexo\blog\source_posts\springboot\3.png" target="_blank" rel="noopener">avatar</a></p>
 <p>..今天先到这里了..</p>
+<p>好了，这是3.28续更的。前几天都快被哽死了。</p>
+<p>是这样，在多次springboot启动失败之后，找到了根源问题。本来是个入门任务被我想得太复杂了。springboot创建时选择依赖并不是越多越好。thymeleaf和security是多余选择的pom。为这事儿太惨了。security里自带了登录拦截器，所以每次打开就这样了。<br>！<a href="C:\Hexo\blog\source_posts\springboot\7.png" target="_blank" rel="noopener">avatar</a></p>
+<p>去掉security之后运行成功，<img src="C:%5CHexo%5Cblog%5Csource_posts%5Cspringboot%5C6.png" srcset="/img/loading.gif" alt="avatar">,时间紧促已经到了ddl，所以连toString方法都没有覆写就交作业了。</p>
+<p>这篇blog不贴源码了，因为气急败坏之下贴了dalao的码，单纯记录一下这次的贪心之失。</p>
 
             </div>
             <hr>
