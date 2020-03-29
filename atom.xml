@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-03-28T14:14:40.986Z</updated>
+  <updated>2020-03-29T09:14:28.966Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -18,10 +18,37 @@
   
   <entry>
     <title>IDEA+MyBatis整合操作MySQL</title>
-    <link href="https://bestyangjh.com/2020/03/22/springboot2.0/"/>
-    <id>https://bestyangjh.com/2020/03/22/springboot2.0/</id>
+    <link href="https://bestyangjh.com/2020/03/29/springboot3-0/"/>
+    <id>https://bestyangjh.com/2020/03/29/springboot3-0/</id>
+    <published>2020-03-29T02:45:00.000Z</published>
+    <updated>2020-03-29T09:14:28.966Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;尝试系统和细节的使用springboot的第三步&lt;/p&gt;
+&lt;h2 id=&quot;2020-03-29&quot;&gt;&lt;a href=&quot;#2020-03-29&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
+    
+    
+      <category term="Maven" scheme="https://bestyangjh.com/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA+MyBatis整合操作MySQL</title>
+    <link href="https://bestyangjh.com/2020/03/22/springboot2-0/"/>
+    <id>https://bestyangjh.com/2020/03/22/springboot2-0/</id>
     <published>2020-03-22T12:04:00.000Z</published>
-    <updated>2020-03-28T14:14:40.986Z</updated>
+    <updated>2020-03-29T02:53:01.870Z</updated>
     
     <summary type="html">
     
@@ -45,10 +72,10 @@
   
   <entry>
     <title>IDEA+Springboot输出Hello World</title>
-    <link href="https://bestyangjh.com/2020/03/17/springboot1/"/>
-    <id>https://bestyangjh.com/2020/03/17/springboot1/</id>
+    <link href="https://bestyangjh.com/2020/03/17/springboot1-0/"/>
+    <id>https://bestyangjh.com/2020/03/17/springboot1-0/</id>
     <published>2020-03-17T02:04:00.000Z</published>
-    <updated>2020-03-28T14:09:33.519Z</updated>
+    <updated>2020-03-29T02:59:34.959Z</updated>
     
     <summary type="html">
     
