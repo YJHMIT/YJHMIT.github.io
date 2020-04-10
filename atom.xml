@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>FluoxeTines&#39;blog</title>
   
-  <subtitle>前路漫长，请走下去</subtitle>
+  <subtitle>ddl才是第一生产力嗷</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-04-04T09:55:55.966Z</updated>
+  <updated>2020-04-10T14:46:38.690Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java也要当小叽居（？</title>
+    <link href="https://bestyangjh.com/2020/04/08/spider/"/>
+    <id>https://bestyangjh.com/2020/04/08/spider/</id>
+    <published>2020-04-08T10:21:16.000Z</published>
+    <updated>2020-04-10T14:46:38.690Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Java也要试试爬虫的，小阳在线头秃..&lt;/p&gt;
+&lt;h2 id=&quot;2020-04-08&quot;&gt;&lt;a href=&quot;#2020-04-08&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="https://bestyangjh.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="Maven" scheme="https://bestyangjh.com/tags/Maven/"/>
+    
+  </entry>
   
   <entry>
     <title>IDEA进阶任务</title>
