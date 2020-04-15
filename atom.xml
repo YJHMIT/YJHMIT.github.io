@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-04-11T14:43:58.862Z</updated>
+  <updated>2020-04-15T03:59:51.032Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hotel.2</title>
+    <link href="https://bestyangjh.com/2020/04/15/hotel-2/"/>
+    <id>https://bestyangjh.com/2020/04/15/hotel-2/</id>
+    <published>2020-04-15T03:59:51.000Z</published>
+    <updated>2020-04-15T03:59:51.032Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>秃头Tine的第一个锅</title>
+    <link href="https://bestyangjh.com/2020/04/12/hotel/"/>
+    <id>https://bestyangjh.com/2020/04/12/hotel/</id>
+    <published>2020-04-12T14:00:00.000Z</published>
+    <updated>2020-04-15T03:56:31.285Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;秃头Tine的第一个锅，必尽力而为&lt;/p&gt;
+&lt;h2 id=&quot;2020-04-12&quot;&gt;&lt;a href=&quot;#2020-04-12&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
+    
+    
+      <category term="task" scheme="https://bestyangjh.com/tags/task/"/>
+    
+  </entry>
   
   <entry>
     <title>Springboot和Freemaker搞一个login叭</title>
