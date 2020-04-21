@@ -16,7 +16,7 @@
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
   <meta name="keywords" content="阳锦华 biu~">
-  <title>hotel.2 - FluoxeTines&#39;blog</title>
+  <title>秃头Tine的锅2.0 - FluoxeTines&#39;blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -130,7 +130,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期三, 四月 15日 2020, 11:59 中午
+                  星期三, 四月 15日 2020, 11:20 上午
                 </p>
               
 
@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    0 字
+                    2.7k 字
                   </span>
                 
 
@@ -147,7 +147,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      1 分钟
+                      14 分钟
                   </span>
                 
 
@@ -182,12 +182,329 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              
+              <p>发现新操作之后，重写一遍，企图搞事情</p>
+<h2 id="2020-04-15"><a href="#2020-04-15" class="headerlink" title="#2020-04-15"></a>#2020-04-15</h2><p>好的，有句话不知当讲不当讲，我又忘记保存了，再一次重写这个blog，差点气死。</p>
+<p>首先面临着的是重新clone重新导包，所以我这次摸到了活的setting，原来之前的都改错了（???）<img src="/2020/04/15/hotel-2/12.jpg" alt>看着五分钟之内导完的包，我才明白到啥叫阿里的快乐。第一次好像导包超过六小时…吐了</p>
+<p><img src="/2020/04/15/hotel-2/1.jpg" alt>接下来修改application.properties的配置，因为和学长的macOS不一样，加之我后来发现数据库也不一样。所以做出那些修改。MySQL是直接启用phpStudy的版本5，学长配置的版本6。这就导致jdbc.Driver和jc.jdbc.Driver的出入一直报错，并且对useSSL也是做出false修改。</p>
+<p>配置完把1.0里的import.sql复制运行，此刻用上了CodeGenerator，终于在Len的解释和官方续命下我搞懂了。哇，不要太感动<img src="/2020/04/15/hotel-2/11.jpg" alt>这才是自动生成Entity和Mapper的快乐吗?</p>
+<p>再接下来就是写入前端了以及连接前后操作的问题了，又到了知识的盲区。NetController真是emm</p>
+<p>#04-16</p>
+<p>##今日尬点<br><img src="/2020/04/15/hotel-2/3.jpg" alt>笑了笑了，被@RestController和@Controller卡了半天，界面一直没有对应的网页。</p>
+<p><img src="/2020/04/15/hotel-2/2.jpg" alt><img src="/2020/04/15/hotel-2/4.jpg" alt>从html更改到后端操作真的卡了我怕有小半天？本来是session写的，写了报错，又改成cookie，还错。就直接equals(“admin”)…一路下滑。不过好歹登录总算可以了</p>
+<p>想想我们到底要干什么：</p>
+<p>1.总共admin，customer，discount，measure，jobs，employee六个实体类。admin是管理员</p>
+<p>梳理一下业务逻辑：application.properties的配置和sql文件的书写—&gt;database的连接和表格的生成—&gt;CodeGenerator修改后生成了Entity和Mapper—&gt;此时应该先完成初级的login和logout的界面—&gt;会用到NetController，cookie和HTTPServletRequest来登录，Controller注解放在类外，以便找到界面—&gt;使用<kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>V</kbd>对前端界面盗取修改ftl文件—&gt;controller，Mapper连接.ftl文件，controller里写操作，mapper里对数据库的操作是新定义的sql语句注解，而不是快捷方法生成，ftl里负责前端显示—&gt;操作记录和管理员，顾客，员工，工种都有要得到全部数据的界面（manage界面），所以务必加上getAll（）方法—&gt;搞定你的ftl文件，也就是前端，在不同的实体里会调用其他实体的数据，所以请保证你的方法足够衔接。</p>
+<p>举个栗子：最开始解决的Discount界面的增加和返回，只写入add方法，在DiscountMapper和addDiscount.ftl中连接的时候，根本不能实现，然后就开始修改，增加和保存按钮是Post的方法，所以靠GetMapping肯定实现不了，然后只能写出GetMapping来处理add，PostMapping来处理finalDiscount，PostMapping的处理相当于保存新增的功能，进而应当返回到DiscountManage界面。addDiscount请求定向到addDiscount.ftl界面—&gt;addDiscount.ftl里连接Post的finalDiscount—&gt;新增完毕后定向到discountManage.ftl界面。此刻完成新增及保存。</p>
+<p>写修改（就是更新界面的时候也发现了同样的问题)，修改是一个Post请求，不可能直接在Controller里GetMapping就完成，所以打算仿照add..之后自然是废物了<img src="/2020/04/15/hotel-2/7.jpg" alt>后来意识到这么写根本没有返回值，然后翻到一篇博客<strong><a href="https://www.cnblogs.com/mazhitao/p/7424415.html" target="_blank" rel="noopener">https://www.cnblogs.com/mazhitao/p/7424415.html</a></strong>，<strong><a href="https://www.jianshu.com/p/599f6340b6ab" target="_blank" rel="noopener">https://www.jianshu.com/p/599f6340b6ab</a></strong>。后来一直返回404，最后是ftl文件的问题，就意味着，前端的界面与后端的操作连接不上。方法和界面多了要分清楚哪些是界面，哪些是方法，贴一波码，Discount是我最先完善的部分。</p>
+<pre><code>package com.admin.hotel.Controller;
+
+
+import com.admin.hotel.Entity.Discount;
+import com.admin.hotel.Mapper.DiscountMapper;
+import com.admin.hotel.Mapper.MeasureMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+
+@Controller
+public class DiscountController {
+    @Autowired
+    DiscountMapper discountMapper;
+    @Autowired
+    private MeasureMapper measureMapper;
+
+    @GetMapping(&quot;/discountManage&quot;)
+    public String discountManage() {
+        return &quot;discountManage&quot;;
+    }
+
+    @ResponseBody
+    @GetMapping(&quot;/getDiscountById&quot;)
+    public Discount getDiscountById(int id) {
+        return discountMapper.selectById(id);
+    }
+
+    @GetMapping(&quot;/updateDiscount&quot;)
+    public ModelAndView updateDiscount(int id) {
+        ModelAndView modelAndView = new ModelAndView(&quot;updateDiscount&quot;);
+        modelAndView.addObject(&quot;id&quot;, id);
+        return modelAndView;
+    }
+
+    @PostMapping(&quot;/updatingDiscount&quot;)
+    public String updatingDiscount(Discount discount, HttpServletRequest httpServletRequest) {
+        measureMapper.inserts(AdminController.measure(httpServletRequest) + &quot;更新了优惠券：&quot; + discount.getName());
+        discountMapper.updateById(discount);
+        return &quot;discountManage&quot;;
+    }
+
+    @ResponseBody
+    @GetMapping(&quot;/getAllDiscount&quot;)
+    public List&lt;Discount&gt; getAllDiscount() {
+        return discountMapper.getAll();
+    }
+
+    @GetMapping(&quot;/addDiscount&quot;)
+    public String addDiscount() {
+        return &quot;addDiscount&quot;;
+    }
+
+    @PostMapping(&quot;/finalDiscount&quot;)
+    public String finalDiscount(Discount discount, HttpServletRequest httpServletRequest) {
+        measureMapper.inserts(AdminController.measure(httpServletRequest) + &quot;添加了优惠券：&quot; + discount.getName());
+        discountMapper.insert(discount);
+        return &quot;discountManage&quot;;
+    }
+}</code></pre><p>就这我还蛮无语的。。因为updatingDiscount和finalDiscount在ftl的位置卡了我好久。</p>
+<p><strong>discountManage.ftl</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+
+    &lt;title&gt; - jqGird&lt;/title&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot;&gt;
+    &lt;link href=&quot;css/bootstrap.min.css?v=3.3.6&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/font-awesome.css?v=4.4.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link href=&quot;css/plugins/bootstrap-table/bootstrap-table.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/animate.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/style.css?v=4.1.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body class=&quot;gray-bg&quot;&gt;
+&lt;div class=&quot;ibox-content&quot;&gt;
+    &lt;div class=&quot;row row-lg&quot;&gt;
+
+
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+            &lt;!-- Example Pagination --&gt;
+            &lt;div class=&quot;example-wrap&quot;&gt;
+                &lt;h4 class=&quot;example-title&quot;&gt;优惠券管理&lt;/h4&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot; style=&quot;margin-bottom: 10px;&quot; id=&quot;add&quot;&gt;新增&lt;/button&gt;
+                &lt;div class=&quot;example&quot;&gt;
+                    &lt;table data-toggle=&quot;table&quot;&gt;
+                        &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;优惠券名&lt;/th&gt;
+                            &lt;th&gt;修改&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- End Example Pagination --&gt;
+        &lt;/div&gt;
+
+
+    &lt;/div&gt;
+
+    &lt;!-- End Panel Other --&gt;
+&lt;/div&gt;
+
+&lt;!-- 全局js --&gt;
+&lt;script src=&quot;js/jquery.min.js?v=2.1.4&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $.get(&quot;/getAllDiscount&quot;, function (data) {
+        $.each(data, function (i, item) {
+            var id = item.id;
+            var name = item.name;
+            $(&quot;tbody&quot;).append(
+                &#39;&lt;tr&gt;&lt;td&gt;&#39; + name + &#39;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/updateDiscount?id=&#39; + id + &#39;&quot;&gt;修改&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&#39;
+            );
+        });
+        $(&quot;.no-records-found&quot;).remove();
+    });
+&lt;/script&gt;
+&lt;script src=&quot;js/bootstrap.min.js?v=3.3.6&quot;&gt;&lt;/script&gt;
+
+
+&lt;!-- 自定义js --&gt;
+&lt;script src=&quot;js/content.js?v=1.0.0&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Page-Level Scripts --&gt;
+
+&lt;!-- Bootstrap table --&gt;
+&lt;script src=&quot;js/plugins/bootstrap-table/bootstrap-table.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/plugins/bootstrap-table/bootstrap-table-mobile.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Peity --&gt;
+&lt;script src=&quot;js/demo/bootstrap-table-demo.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(&quot;#add&quot;).click(function () {
+        //alert(&quot;ok&quot;);
+        window.location = &quot;/addDiscount&quot;;
+    });
+
+&lt;/script&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p><strong>addDiscount</strong>:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+
+    &lt;title&gt; - jqGird&lt;/title&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot;&gt;
+    &lt;link href=&quot;css/bootstrap.min.css?v=3.3.6&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/font-awesome.css?v=4.4.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link href=&quot;css/plugins/bootstrap-table/bootstrap-table.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/animate.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/style.css?v=4.1.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/webuploader.css&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body class=&quot;gray-bg&quot;&gt;
+&lt;div class=&quot;ibox-content&quot;&gt;
+    &lt;form method=&quot;post&quot; action=&quot;/finalDiscount&quot;&gt;
+        &lt;div style=&quot;margin-bottom: 10px;&quot;&gt;
+            &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;/discountManage&quot;&gt;优惠券管理&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;/addDiscount&quot;&gt;新增优惠券&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;exampleInputEmail1&quot;&gt;优惠券名&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;请输入优惠券名&quot; name=&quot;name&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;提交保存&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;!-- 全局js --&gt;
+&lt;script src=&quot;js/jquery.min.js?v=2.1.4&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/bootstrap.min.js?v=3.3.6&quot;&gt;&lt;/script&gt;
+
+
+&lt;!-- 自定义js --&gt;
+&lt;script src=&quot;js/content.js?v=1.0.0&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Page-Level Scripts --&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p><strong>updateDiscount</strong>:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+
+    &lt;title&gt; - jqGird&lt;/title&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot;&gt;
+    &lt;link href=&quot;css/bootstrap.min.css?v=3.3.6&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/font-awesome.css?v=4.4.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link href=&quot;css/plugins/bootstrap-table/bootstrap-table.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/animate.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;css/style.css?v=4.1.0&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/webuploader.css&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body class=&quot;gray-bg&quot;&gt;
+&lt;div class=&quot;ibox-content&quot;&gt;
+    &lt;form method=&quot;post&quot; action=&quot;/updatingDiscount&quot;&gt;
+
+        &lt;div style=&quot;margin-bottom: 10px;&quot;&gt;
+            &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;/discountManage&quot;&gt;优惠券管理&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;/updateDiscount?id=${id}&quot;&gt;修改优惠券&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;input type=&quot;text&quot; style=&quot;display:none&quot; name=&quot;id&quot; value=&quot;${id}&quot;&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;exampleInputEmail1&quot;&gt;优惠券名&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;请输入优惠券名&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;提交保存&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;!-- 全局js --&gt;
+&lt;script src=&quot;js/jquery.min.js?v=2.1.4&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $.get(&quot;/getDiscountById?id=&quot; +${id}, function (data) {
+        $(&quot;#name&quot;).attr(&quot;value&quot;, data.name);
+    })
+&lt;/script&gt;
+&lt;script src=&quot;js/bootstrap.min.js?v=3.3.6&quot;&gt;&lt;/script&gt;
+
+
+&lt;!-- 自定义js --&gt;
+&lt;script src=&quot;js/content.js?v=1.0.0&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Page-Level Scripts --&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>就先这样了。代码推完了，github也有。</p>
+
             </div>
             <hr>
             <div>
               <p>
                 
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Springboot/">Springboot</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/task/">task</a>
+                    
+                  </span>
                 
               </p>
               
@@ -385,7 +702,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "hotel.2&nbsp;",
+        "秃头Tine的锅2.0&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
