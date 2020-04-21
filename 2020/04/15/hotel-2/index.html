@@ -192,8 +192,7 @@
 <p>##今日尬点<br><img src="/2020/04/15/hotel-2/3.jpg" alt>笑了笑了，被@RestController和@Controller卡了半天，界面一直没有对应的网页。</p>
 <p><img src="/2020/04/15/hotel-2/2.jpg" alt><img src="/2020/04/15/hotel-2/4.jpg" alt>从html更改到后端操作真的卡了我怕有小半天？本来是session写的，写了报错，又改成cookie，还错。就直接equals(“admin”)…一路下滑。不过好歹登录总算可以了</p>
 <p>想想我们到底要干什么：</p>
-<p>1.总共admin，customer，discount，measure，jobs，employee六个实体类。admin是管理员</p>
-<p>梳理一下业务逻辑：application.properties的配置和sql文件的书写—&gt;database的连接和表格的生成—&gt;CodeGenerator修改后生成了Entity和Mapper—&gt;此时应该先完成初级的login和logout的界面—&gt;会用到NetController，cookie和HTTPServletRequest来登录，Controller注解放在类外，以便找到界面—&gt;使用<kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>V</kbd>对前端界面盗取修改ftl文件—&gt;controller，Mapper连接.ftl文件，controller里写操作，mapper里对数据库的操作是新定义的sql语句注解，而不是快捷方法生成，ftl里负责前端显示—&gt;操作记录和管理员，顾客，员工，工种都有要得到全部数据的界面（manage界面），所以务必加上getAll（）方法—&gt;搞定你的ftl文件，也就是前端，在不同的实体里会调用其他实体的数据，所以请保证你的方法足够衔接。</p>
+<p>梳理一下写代码的顺序：application.properties的配置和sql文件的书写—&gt;database的连接和表格的生成—&gt;CodeGenerator修改后生成了Entity和Mapper—&gt;此时应该先完成初级的login和logout的界面—&gt;会用到NetController，cookie和HTTPServletRequest来登录，Controller注解放在类外，以便找到界面—&gt;使用<kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>V</kbd>对前端界面盗取修改ftl文件—&gt;controller，Mapper连接.ftl文件，controller里写操作，mapper里对数据库的操作是新定义的sql语句注解，而不是快捷方法生成，ftl里负责前端显示—&gt;操作记录和管理员，顾客，员工，工种都有要得到全部数据的界面（manage界面），所以务必加上getAll（）方法—&gt;搞定你的ftl文件，也就是前端，在不同的实体里会调用其他实体的数据，所以请保证你的方法足够衔接。</p>
 <p>举个栗子：最开始解决的Discount界面的增加和返回，只写入add方法，在DiscountMapper和addDiscount.ftl中连接的时候，根本不能实现，然后就开始修改，增加和保存按钮是Post的方法，所以靠GetMapping肯定实现不了，然后只能写出GetMapping来处理add，PostMapping来处理finalDiscount，PostMapping的处理相当于保存新增的功能，进而应当返回到DiscountManage界面。addDiscount请求定向到addDiscount.ftl界面—&gt;addDiscount.ftl里连接Post的finalDiscount—&gt;新增完毕后定向到discountManage.ftl界面。此刻完成新增及保存。</p>
 <p>写修改（就是更新界面的时候也发现了同样的问题)，修改是一个Post请求，不可能直接在Controller里GetMapping就完成，所以打算仿照add..之后自然是废物了<img src="/2020/04/15/hotel-2/7.jpg" alt>后来意识到这么写根本没有返回值，然后翻到一篇博客<strong><a href="https://www.cnblogs.com/mazhitao/p/7424415.html" target="_blank" rel="noopener">https://www.cnblogs.com/mazhitao/p/7424415.html</a></strong>，<strong><a href="https://www.jianshu.com/p/599f6340b6ab" target="_blank" rel="noopener">https://www.jianshu.com/p/599f6340b6ab</a></strong>。后来一直返回404，最后是ftl文件的问题，就意味着，前端的界面与后端的操作连接不上。方法和界面多了要分清楚哪些是界面，哪些是方法，贴一波码，Discount是我最先完善的部分。</p>
 <pre><code>package com.admin.hotel.Controller;
@@ -502,7 +501,7 @@ public class DiscountController {
                   <span>
                 <i class="iconfont icon-tag"></i>
                     
-                      <a class="hover-with-bg" href="/tags/task/">task</a>
+                      <a class="hover-with-bg" href="/tags/task1/">task1</a>
                     
                   </span>
                 

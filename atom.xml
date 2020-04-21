@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>FluoxeTines&#39;blog</title>
   
-  <subtitle>度过了几乎罢工的一星期</subtitle>
+  <subtitle>锅做完了，该好好赶作业了...</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-04-21T08:45:56.285Z</updated>
+  <updated>2020-04-21T09:57:09.542Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>秃头Tine的锅3.0</title>
+    <link href="https://bestyangjh.com/2020/04/21/hotel-3/"/>
+    <id>https://bestyangjh.com/2020/04/21/hotel-3/</id>
+    <published>2020-04-21T08:49:20.000Z</published>
+    <updated>2020-04-21T09:57:09.542Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;吐血完成，此篇是反思和总结&lt;/p&gt;
+&lt;p&gt;#代码历程&lt;/p&gt;
+&lt;p&gt;##04-12&lt;/p&gt;
+&lt;p&gt;这是第一次接入这个实战的HAdmin，看看一路走了多少坑，心脏病都快吓出来了。&lt;/p&gt;
+&lt;p&gt;在接到的第二天一早，没有匆匆忙忙登录进模板，只看了大概，连增删，按键，功能都没看就
+        
+      
+    
+    </summary>
+    
+      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
+    
+    
+      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>秃头Tine的锅2.0</title>
     <link href="https://bestyangjh.com/2020/04/15/hotel-2/"/>
     <id>https://bestyangjh.com/2020/04/15/hotel-2/</id>
     <published>2020-04-15T03:20:00.000Z</published>
-    <updated>2020-04-21T08:45:56.285Z</updated>
+    <updated>2020-04-21T09:53:49.015Z</updated>
     
     <summary type="html">
     
@@ -39,7 +69,7 @@
       <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
     
     
-      <category term="task" scheme="https://bestyangjh.com/tags/task/"/>
+      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
     
   </entry>
   
@@ -48,7 +78,7 @@
     <link href="https://bestyangjh.com/2020/04/12/hotel/"/>
     <id>https://bestyangjh.com/2020/04/12/hotel/</id>
     <published>2020-04-12T14:00:00.000Z</published>
-    <updated>2020-04-15T04:04:28.253Z</updated>
+    <updated>2020-04-21T09:59:01.932Z</updated>
     
     <summary type="html">
     
@@ -66,7 +96,7 @@
       <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
     
     
-      <category term="task" scheme="https://bestyangjh.com/tags/task/"/>
+      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
     
   </entry>
   
