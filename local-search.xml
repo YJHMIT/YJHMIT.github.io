@@ -4,6 +4,81 @@
   
   
   <entry>
+    <title>灰色的生活，失真的影像</title>
+    <link href="/2020/05/09/falied/"/>
+    <url>/2020/05/09/falied/</url>
+    
+    <content type="html"><![CDATA[<p>低谷期了，想坐着休息会儿（不是技术文，单纯营业自己的博客</p><p>#05-09</p><p>*神奇的溃败<br>*恐惧<br>*沉寂</p><p>（友情提醒，不知人不评人，不知事不论事）</p><p>我走了好久了，可是突然不想走了。我没干过什么半途而废的事情，但是这次食言了。</p><p>生活突然变灰之后，吃饭想吐睡觉失眠。</p><p>一次性咕掉了好几个组，不是很负责任的做法吧。填词的那边撂挑子了，想想那个盼着我的策划，还有点过意不去。健身也搁置下来，我觉得最对不住是项目组吧，说不上自己经历多少选拔和栽培，但是时至今日我不能不负责的留在里面了。</p><p>我彩色的生活突然变成了雪花电视。</p><p>天气挺热的，床也很软，可是躺下就睡不着了。真不是一个，很容易溃不成军的人。摸着良心一路走来遇到的坑坑洼洼也数不胜数了。只是想歇会儿咯。</p><p><strong>“无忧的少年，安静坐在我旁边，我却来不及，讲不出再见。”</strong>每次的道别都显得格外的狼狈，不想走在这个城市了，不想再遇见死在过往的人。我没有说谎，我缺点之一就是很健忘，可我记得角落的窗口闻得到玫瑰花香。就走到这里吧。</p><p>我记得溃败之后，一切都不顺心起来，我给好朋友买了生日礼物准备惊喜，却连一句微信回复都收不到，在对方面前，如同空气，虚情假意。昨天失眠到凌晨两三点才睡着，今早七点不到就醒了。阳光很好，可阳光不是我的。身边的人，不够真诚，不值一提。对于处理人际关系这件事情，我的用户体验极差。</p><p>天空被盗窃温柔，在血色的世界里贩卖晨昏，它否认自己的冰冷，还要故作深情</p><p>抓着最后的希望，他孤注一掷的倾尽所有</p><p>企图在有生之年看到人间美好，付出的都有回报，深情都有寄托。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linux2.0</title>
+    <link href="/2020/05/05/linux2-0/"/>
+    <url>/2020/05/05/linux2-0/</url>
+    
+    <content type="html"><![CDATA[<p>Linux的进行时</p><p>#05-05</p><p><strong>用户和权限管理</strong><br>用户分为root用户和普通用户，<strong>useradd FluoxeTine</strong>就新建了用户，id root,id FluoxeTine查看是否存在用户。查看家目录，ls /root得到root的家目录。ls -a /home/FluoxeTine得到新建用户的家目录。在etc文件也能看到用户的存在，tail -10 /etc/passwd(tail -10 /etc/shadow.</p><p>设置密码：passwd FluoxeTine。删除用户：userdel -r FluoxeTine.</p><p>修改用户账号的信息：usermod -d 新目录，更换用户家目录的位置。</p><p>用户组的管理命令：groupadd group1–&gt;useradd user1–&gt;usermod -G group1 user1。useradd -g group1 user2一步操作</p><p>…待更新</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linux1.0</title>
+    <link href="/2020/04/24/linux/"/>
+    <url>/2020/04/24/linux/</url>
+    
+    <content type="html"><![CDATA[<p>Linux的初识</p><p>#04-24</p><p>1.Linux是最普及也是最实用的服务端操作系统，App和网站大多运营在Linux操作系统上———&gt;服务端的运维和开发工作必备技能。</p><p>2.Linux作为服务端操作系统，命令行为主进行操作，与客户端的图形交互界面不一致。我直接操作装载下来就是命令行终端。一般不关机，init 0可以达到关机的效果。</p><p>3.在你的登录界面，可以看一下操作符来判断用户情况。操作符是#登录的是root，操作不受限制，$一般用户，操作符受限制，部分功能是不能使用的。</p><p>终端分类：图形终端，命令行终端，远程终端（SSH，VNC）。在图形终端里可以单独创建属于CentOS的用户，就是”$”开头的受限用户。</p><p>4.命令很多</p><p><strong>帮助命令</strong>能帮大忙：man(manual),help,info.<strong>man</strong>的用法，man ls 得到ls命令的用法，man man得到man本身的方法。<strong>help</strong>的用法：内部命令help cd，外部命令 ls –help。<strong>info</strong>的用法：是help的补充，详细版。我个人习惯直接man查询。</p><p>Linux里一切皆文件，我们梳理一下目录文件的情况：”/“显示出linux的默认文件夹（根目录），”/root root” 用户的家目录,常用目录：”/etc”配置文件目录，”/bin”命令目录，”/sbin”管理命令目录。</p><p><strong>重要命令：</strong></p><p><strong>ls</strong>:查看当前目录下的文件，ls <strong>-l</strong>长格式，可以显示出文件类型。”-“普通文件，”d”文件夹，后面的九个字符都表示文件的权限，文件个数，文件的创建组和用户所属的用户组，文件的大小，最后修改时间，文件名。ls -l 不跟文件名就是当前目录（ls -l .)  ls <strong>-a</strong>显示隐藏文件夹(windows一般要系统选项去设置查看隐藏的文件夹，Linux在这一点就很方便),ls <strong>-l -r</strong>以文件名逆向排序，ls <strong>-l -t</strong>以时间逆向排序，操作也可以只写一个-跟多个命令符（ls -lr)，ls <strong>-R</strong>递归显示文件夹。</p><p><strong>cd</strong>切换文件目录，Tab键可以自动补全，cd -回到之前操作的目录。操作当前目录切换的文件夹时，前半段用”.”可以替代当前目录，但是./都可以去掉。以根目录操作是绝对路径进入，以当前目录操作是相对路径进入,<strong>cd ../</strong>进入上级目录。</p><p>查看目录的小妙招：<strong>pwd</strong>显示当前的目录名称，<strong>clear or CTRl+l</strong>清屏小妙招。</p><p><strong>目录的操作：</strong></p><p><strong>mkdir</strong>建立新目录（-p可以忽略创建报错）：单次新建多级目录：mkdir /a —&gt; mkdir /a/b，直接创建多级目录: mkdir -p /a/b/c/d。<strong>rm</strong>删除目录：rm -r ，rm -r /a(提问是否删除y)逐级删除，Ctrl+C退出当前的操作，不删了。rm -r -f(恐怖型的命令）建议反复检查，不要瞎操作，无提示命令直接删除不可找回。目录的复制在后续会提到。</p><p><strong>文件的操作：</strong></p><p>打包和压缩/解压缩（两个过程）：最早的Linux备份介质是磁带后来变成了磁盘，使用的命令是tar。对文件的压缩一般分为两部分，先打包，再压缩。这个传统持续到现在，压缩的命令是gzip，bzip2，tar。我们对/etc来操作，内部有.conf结尾的文件（配置文件），Linux一般都是备份配置文件。再介绍一个特殊的文件类型：tmp临时文件，我们操作大多在这个文件演示。</p><p><strong>tar</strong>在打包命令，c打包，x解包。</p><p>tar cf /tmp/etc-back.tar  /etc,执行就打包完成，ls -lh  /tmp/etc-back.tar标准方式查看文件大小。gzip方式进行压缩：tar c<strong>z</strong>f /tmp/etc-back.tar.gz（.tgz)  /etc,打包同时也压缩,双扩展名展示以便明示压缩操作。bzip2方式进行压缩：tar c<strong>j</strong>f /tmp/etc-back.tar.bz2(.tbz2)  /etc。</p><p>bzip2的压缩时间长，因为<strong>bzip2</strong>压缩比例更高。ls -lh /tmp/etc-back.tar.*展示文件大小，即可作比较。</p><p>tar xf /tmp/etc-back.tar -C  /root 执行普通解压缩。tar zxf /tmp/etc-back.tar.gz -C /root 执行gzip的解压缩，tar jxf /tmp/etc-back.tar.bz2 -C /root 执行bzip2的解压缩。</p><p>文件的复制：cp命令复制文件。一开始尝试了cp /root/a /tmp ，结果报错，因为/a是目录，复制目录需要-r。文件可以直接复制。为了演示，touch命令创建空文件，touch /filea–&gt;cp /filea .tmp (cp -v /filea /tmp查看进度条)。复制操作之后原有的操作时间会改变，此时有选项可以保留操作时间，cp -p 保留时间，cp -a的功能比较强大，保留属主，保留时间，保留权限。</p><p>文件和文件夹的移动或者重命名 ：mv命令，重命名：mv /filea /fileb,其实底层也相当于是移动。移动：mv /fileb /tmp 一个目录下的文件夹移动到另外一个并且改名：mv /tmp/file /filec。移动目录：mv /dira /tmp。移动多个文件是可以使用通配符，”*”匹配全部，”？”匹配单个字符。</p><p>查看文件内容，cat 全部 ，head头部 选择行数，tail尾部选择行数-3，tail -f跟踪文件的变化，wc -l /tmp/filea查看多少行，more。less分行显示</p><p>vim正常模式：i输入一些文本后，区分几种插入模式之间的不同，i当前插入，I插入并且到达此行的开头，a来到插入处的后一位，A来到插入行的结尾，o向下插入一行，O向上插入一行。”:”，hjkl对光标进行上下左右的移动。</p><p>复制：yy整行复制，p整行粘贴，nyy（3yy）复制3行，p整块粘贴。y$,从光标处复制到最末尾。剪切：dd命令剪切整行，d$剪切光标到这一行的结束，p进行粘贴。撤销操作：u，多次撤销。Ctrl+r重做操作，解决撤销过多的问题。x删除，r替换也是常用命令。</p><p>vim的命令模式：文本的保存：w /root/a.txt。打开文件时：vim filename，在保存时就直接：w操作。”:wq”保存退出,”:q!”不保存退出。查找命令”/x”，按”n”使光标寻找下一个字符，”shift+n”往上寻找相同的字符。替换命令：”:%s/old/new”将以前的字符更换成新的字符。如果有多个字符需要替换，”:%s/old/new/g”全局替换，如果要取规定的行数”:2,4s/old/new.</p><p>更换到指定的位置：”:set nu”–&gt;11 shift+G移动到了第11行。移动到第1行”g”,移动到最后一行”G”。shift+6移动到本行开头，shift+4移动到行末尾。”set nu”显示行数的操作比较常用，可以自行配置使每次打开都显示行号。vim /etc/vimrc–&gt;shift+g–&gt;o–&gt;set nu–&gt;:wq</p><p>vim的可视模式：”v”字符可视模式，”v”可视行模式，”ctrl+V”块可视模式，勾选出操作块。比如在块的每行前列加入字符，I–&gt;123–&gt;esc按两次，操作成功。</p><p><strong>su，sudo</strong>命令：</p><p>su切换用户：su - FluoxeTine,访问/root目录会提示你权限不够，exit退出当前用户。shutdown -h 30,30分钟关闭系统，shutdown -C可以中断操作，这是root用户的特权。将此命令赋给普通用户：visudo–&gt;FluoxeTine ALL(localhost)=/sbin/shutdown -c。在普通用户的环境下操作时：sudo /sbin/shutdown -c–&gt;输入密码。sudo赋予普通用户某个root拥有的权利。</p><p><strong>文件权限</strong></p><p>第一个的符号表示类型（常用的-普通文件，d目录文件），后接的三个符号代表用户对文件的权限，中间三个是用户组对文件有什么权限，最后三个表示其他用户对文件有什么权限。普通文件权限字符（八进制）：r=4读，w=2写，x=1执行。创建文件时会根据此时的用户和用户组根据umask值计算，有默认权限。目录文件权限字符：x进入目录，rx显示目录内的文件名，wx修改目录内的文件名。</p><p><strong>修改</strong>权限：chmod修改文件，目录权限，可用字符也可以数字修改，chown修改属主属组，chgrp单独更改属组。chmod修改时，u,g,o分别对应三个部分，a对应全局，+增加权限，—减少权限，=设置权限。chmod u +x filea和chmod 446 filea。</p><p><strong>软件</strong></p><p>软件包管理器CentOS使用yum包管理器，安装格式为rpm。</p><p>rpm包格式，rpm -q查询软件包，-i安装软件包，-e卸载软件包。yum命令：install安装软件包，remove卸载软件包，list| grouplist查看软件包，update升级软件包。使用阿里的镜像，介绍详细，就不一一赘述了。yum不受依赖控制，rpm有依赖限制问题，也有软件来源不安全的问题。软件长时间放置会出现bug，最好定时升级yum update.</p><p><strong>top和ps</strong><br>ps查看当前的终端下能查看到的进程状态，ps -e | more简单分批查看,ps -ef | more能显示有效用户ID，父进程PPID，显示命令的完整名称CMD。ps -eLf | more,查看LWP轻量级进程（线程）。pstree | more，查看进程树。</p><p>top，顶部会显示开机时长，登录用户，平均负载，第二行tasks，显示运行的进程总数和状态。第三行CPU的分配情况，第四行内存使用情况，第五行Swap虚拟内存，内存不足时调用。动态显示进程情况</p><p><strong>本着职业道德的原则</strong>，我完成了这次分享。不过目前看来已经没有用了，放在盘里，需要自取。</p><p>链接：<a href="https://pan.baidu.com/s/1g2Aj3EVdS0Hj3ZPsfxB5ug" target="_blank" rel="noopener">https://pan.baidu.com/s/1g2Aj3EVdS0Hj3ZPsfxB5ug</a><br>提取码：q2ng<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>秃头Tine的锅3.0</title>
     <link href="/2020/04/21/hotel-3/"/>
     <url>/2020/04/21/hotel-3/</url>

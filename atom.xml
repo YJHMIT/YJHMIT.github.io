@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>FluoxeTines&#39;blog</title>
+  <title>FluoxeTine&#39;s Blog</title>
   
-  <subtitle>锅做完了，该好好赶作业了...</subtitle>
+  <subtitle>我在人间，贩卖温柔</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-04-21T09:57:09.542Z</updated>
+  <updated>2020-05-10T07:56:37.067Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,98 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>灰色的生活，失真的影像</title>
+    <link href="https://bestyangjh.com/2020/05/09/falied/"/>
+    <id>https://bestyangjh.com/2020/05/09/falied/</id>
+    <published>2020-05-09T02:37:02.000Z</published>
+    <updated>2020-05-10T07:56:37.067Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;低谷期了，想坐着休息会儿（不是技术文，单纯营业自己的博客&lt;/p&gt;
+&lt;p&gt;#05-09&lt;/p&gt;
+&lt;p&gt;*神奇的溃败&lt;br&gt;*恐惧&lt;br&gt;*沉寂&lt;/p&gt;
+&lt;p&gt;（友情提醒，不知人不评人，不知事不论事）&lt;/p&gt;
+&lt;p&gt;我走了好久了，可是突然不想走了。我没干过什么半途而废的事情，但
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux2.0</title>
+    <link href="https://bestyangjh.com/2020/05/05/linux2-0/"/>
+    <id>https://bestyangjh.com/2020/05/05/linux2-0/</id>
+    <published>2020-05-05T08:11:17.000Z</published>
+    <updated>2020-05-09T02:35:20.856Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux的进行时&lt;/p&gt;
+&lt;p&gt;#05-05&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户和权限管理&lt;/strong&gt;&lt;br&gt;用户分为root用户和普通用户，&lt;strong&gt;useradd FluoxeTine&lt;/strong&gt;就新建了用户，id root,id
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://bestyangjh.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://bestyangjh.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux1.0</title>
+    <link href="https://bestyangjh.com/2020/04/24/linux/"/>
+    <id>https://bestyangjh.com/2020/04/24/linux/</id>
+    <published>2020-04-24T01:43:12.000Z</published>
+    <updated>2020-05-10T07:56:38.931Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux的初识&lt;/p&gt;
+&lt;p&gt;#04-24&lt;/p&gt;
+&lt;p&gt;1.Linux是最普及也是最实用的服务端操作系统，App和网站大多运营在Linux操作系统上———&amp;gt;服务端的运维和开发工作必备技能。&lt;/p&gt;
+&lt;p&gt;2.Linux作为服务端操作系统，命令行为主进行操作，与客户
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://bestyangjh.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://bestyangjh.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>秃头Tine的锅3.0</title>
     <link href="https://bestyangjh.com/2020/04/21/hotel-3/"/>
     <id>https://bestyangjh.com/2020/04/21/hotel-3/</id>
     <published>2020-04-21T08:49:20.000Z</published>
-    <updated>2020-04-21T09:57:09.542Z</updated>
+    <updated>2020-04-24T07:45:05.896Z</updated>
     
     <summary type="html">
     
