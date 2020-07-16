@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-05-10T07:56:37.067Z</updated>
+  <updated>2020-07-16T09:54:05.375Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>灰色的生活，失真的影像</title>
+    <title>back</title>
+    <link href="https://bestyangjh.com/2020/07/16/back/"/>
+    <id>https://bestyangjh.com/2020/07/16/back/</id>
+    <published>2020-07-16T02:39:44.000Z</published>
+    <updated>2020-07-16T09:54:05.375Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我回来了，回归我的代码生活。啊哈哈哈，重新开始的感觉可真好。&lt;/p&gt;
+&lt;p&gt;在一段时间的迷茫和停滞不前之后，我又可以了！接下来步入大二的阶段，小阳同学，加油啊。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.机器学习&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.python暑期
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>failed</title>
     <link href="https://bestyangjh.com/2020/05/09/falied/"/>
     <id>https://bestyangjh.com/2020/05/09/falied/</id>
     <published>2020-05-09T02:37:02.000Z</published>
-    <updated>2020-05-10T07:56:37.067Z</updated>
+    <updated>2020-07-16T09:50:28.437Z</updated>
     
     <summary type="html">
     
@@ -32,8 +61,8 @@
           &lt;p&gt;低谷期了，想坐着休息会儿（不是技术文，单纯营业自己的博客&lt;/p&gt;
 &lt;p&gt;#05-09&lt;/p&gt;
 &lt;p&gt;*神奇的溃败&lt;br&gt;*恐惧&lt;br&gt;*沉寂&lt;/p&gt;
-&lt;p&gt;（友情提醒，不知人不评人，不知事不论事）&lt;/p&gt;
-&lt;p&gt;我走了好久了，可是突然不想走了。我没干过什么半途而废的事情，但
+&lt;p&gt;我走了好久了，可是突然不想走了。我没干过什么半途而废的事情，但是这次食言了。&lt;/p&gt;
+&lt;p&gt;生活突然变灰之后，吃饭想吐
         
       
     
