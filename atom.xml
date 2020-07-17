@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-07-16T09:54:05.375Z</updated>
+  <updated>2020-07-17T14:13:26.780Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>task</title>
+    <link href="https://bestyangjh.com/2020/07/16/task/"/>
+    <id>https://bestyangjh.com/2020/07/16/task/</id>
+    <published>2020-07-16T13:13:29.000Z</published>
+    <updated>2020-07-17T14:13:26.780Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#7-16&lt;/p&gt;
+&lt;p&gt;有些略微意外并且突然的进入了py暑期实践，虽然本身是活动室py组的人，但貌似前半年的方向一直落在后端开发上了。&lt;/p&gt;
+&lt;p&gt;我更喜欢自由度高一些的组织，所以之前的某些项目组跟我的时间安排和生活安排冲突了。导致了退出的后果，然后就是之前一直想尝试的
+        
+      
+    
+    </summary>
+    
+      <category term="Mmachine Learning" scheme="https://bestyangjh.com/categories/Mmachine-Learning/"/>
+    
+    
+      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+    
+  </entry>
+  
+  <entry>
     <title>back</title>
     <link href="https://bestyangjh.com/2020/07/16/back/"/>
     <id>https://bestyangjh.com/2020/07/16/back/</id>
     <published>2020-07-16T02:39:44.000Z</published>
-    <updated>2020-07-16T09:54:05.375Z</updated>
+    <updated>2020-07-16T13:12:25.660Z</updated>
     
     <summary type="html">
     
@@ -29,10 +57,10 @@
     
     </summary>
     
-      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="加密文章" scheme="https://bestyangjh.com/categories/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="加密随笔" scheme="https://bestyangjh.com/tags/%E5%8A%A0%E5%AF%86%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

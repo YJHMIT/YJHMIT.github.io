@@ -4,23 +4,48 @@
   
   
   <entry>
-    <title>back</title>
-    <link href="/2020/07/16/back/"/>
-    <url>/2020/07/16/back/</url>
+    <title>task</title>
+    <link href="/2020/07/16/task/"/>
+    <url>/2020/07/16/task/</url>
     
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="输入密码吧皮卡丘！" /><label>输入密码吧皮卡丘！</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="1d1cafd0c51b3753c5ab7ac928450202937f3757a712e55d16bfca16ae60be4b">88f679ecb68eb1917ecf5e4686587c011b611a7fe46f3373a46d59b6a10b4a0b14caebca0e6c7f756d5e2cca5270241dee343da95d811560371fb8fc2b093884e11216a8f668423979c3c612b8a744635afabb53a5641a4ed087c7d0722d7be14f6fd0e086d48fe3bc3f9b48c9d574b87c1c8b3509f8371cc455e6b14e13d83a9a28ea24fadc7734d0ecfba53872e74d5519e539dbc8277a54567ef7d705e55816842f8e9d8373e3822110907a09519ad7f751967c4a9ba82730373c2ffb62c7150e7301394065dce2f4c8af463a5acfed1ef964872668210d53545818e01ff5a3cbfec64e614cb0c567dcc5071ab10c24f4178bf4e5e0fc4bbc64aeeb5ce771f3b35444bd2faba27cea9105dc471eeb122af9ffa6722d86766e97a77b027b0ee7e2838c9ab04b21e41a61e4f32c298ac38a07e1dad452ec34c0a51e3e366f09fb5eefce0f44f7081c2387f0d7ed9e0806e8c438892e4f8ed66cb351dccee39331f2795d95aec454f321ae13eaf4390e4ba634d644b877776c9523b49296cf562bb0dc99c6551ecef921fa598eeb1d2b</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<p>#7-16</p><p>有些略微意外并且突然的进入了py暑期实践，虽然本身是活动室py组的人，但貌似前半年的方向一直落在后端开发上了。</p><p>我更喜欢自由度高一些的组织，所以之前的某些项目组跟我的时间安排和生活安排冲突了。导致了退出的后果，然后就是之前一直想尝试的机器学习和AI终于还是上手了。</p><p>期待这段新的旅途…</p><p>1.ML某种方面上的定义，samuel表示这是一种不需要详细精确代码就可以实现学习的功能，Tom认为至少分为三部分，EPT，experience反馈给task，得到相应的举动和可能性反馈performance measure。</p><p>基本分类：监督学习（supervised learning）和无监督学习（unsupervised learning）。监督学习意味着，有固定的标准和情况来对当下的数据整体进行区分，而无监督学习意味着没有标准，单纯拥有数据体的情况下，对已有的数据体按照可能的组群进行划分。</p><p>监督学习分为，回归型（给出相应的函数曲线拟合数据）和离散分类型（依照标准分为不同的种类）。无监督学习分为，聚类算法（内部划分族群）和鸡尾酒会算法（分离数据）。</p><p>2.我们采用m表示训练样本，x表示输入量/特征量，y表示输出量/目标变量。使用（x,y)表示训练样本（training example）。</p><p>3.第一个ML模型，单变量线性回归模型，明确部分定义：假设函数，代价函数，批处理梯度下降是第一个算法。在处理线性回归问题的时候，平方误差代价函数是最常用也是最实用的，批处理梯度下降也是最常用的算法。</p><p>公式给在纸质笔记里了（电脑还是没有笔来的舒服，如果拥有iPad我还能这样？<img src="/2020/07/16/task/1.jpg" alt>顺手把偏导的式子推了一下，确实记忆深刻一些。</p><p>4.凄惨的软工同学并没有学过线代啊这？所以就又听了一波线代的课。</p><p><strong>复制这段内容后打开百度网盘手机App，操作更方便哦 链接:<a href="https://pan.baidu.com/s/1ZoCzRHPhTQv-OoRhtpzN1Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZoCzRHPhTQv-OoRhtpzN1Q</a> 提取码:880c</strong></p>]]></content>
     
     
     <categories>
       
-      <category>生活</category>
+      <category>Mmachine Learning</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>随笔</tag>
+      <tag>ML base</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>back</title>
+    <link href="/2020/07/16/back/"/>
+    <url>/2020/07/16/back/</url>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="输入密码吧皮卡丘！" /><label>输入密码吧皮卡丘！</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="cf8717d779351545d7d832f9bf920127fb10669a2738e5d8b6c10e14dcf86a1a">88f679ecb68eb1917ecf5e4686587c011b611a7fe46f3373a46d59b6a10b4a0b14caebca0e6c7f756d5e2cca5270241dee343da95d811560371fb8fc2b093884e11216a8f668423979c3c612b8a744635afabb53a5641a4ed087c7d0722d7be14f6fd0e086d48fe3bc3f9b48c9d574b87c1c8b3509f8371cc455e6b14e13d83a9a28ea24fadc7734d0ecfba53872e74d5519e539dbc8277a54567ef7d705e55816842f8e9d8373e3822110907a09519ad7f751967c4a9ba82730373c2ffb62c7150e7301394065dce2f4c8af463a5acfed1ef964872668210d53545818e01ff519151d0fc49484e17289d112d7eb1f5a0f2e1522d68b351f76ed496ff4b74b7ba8a2db07db7eab29cc4051877c889e4e4caef611747e54a69cd092844eeb5b68e2cf05225a527d2b2cc8cce63bcae85e3de89a4c6ab4af52cdf0a57900932ddf77dc375d5759c1bd4ac058a4bd4ff003d0e950da622e95ffc2dcce9489afc0e89ce921b853ac092918e7655f0aaec77f306a50867b0f99aeae8b785eb9835af6292441f8bb843075a7a649db830b21f055fc0c9e57269e59401d636bee46f8e7c6bf087f1d7974d1d6951981896c3d79b218f9c0b331e6f71988c1aabb22d5bd578f727cc564197e501ce716a0842e59e7a706ff1be2446e5a33d00e9e0d744f710ed8c3694902939863a48940c7a8f53548dd70caf53d888424ee85fd912a6e8cb1d0eac25a99afcb99272f74a86a7d933303a2238637d997cebdc0e1ccd917776cfe51a9a5ab003235ee4d88d26d5300304bdddbd1235fd61ad892573a5c500afcff0ba220340fc18deabf8a4200691c854de0258cd7763843fbe7a12b4e9bca418b1be09dcdf620b0bc63ddcc22d972c30d98b24831d057a194db3850d8b4418d05e2de964e1599bcfdb3dd47b30f292477842e7c31e77a712bc39ec86bf9f60d2b049cbd74449894b621de25fcffe074a80dedebad735503ff76502c8ee1bbdc11f714110bd05aa7e1f2a83207f6ffbd5f9adb6eb480c8cec06d91e2c4799b04338c2411bc4010ee52ee68775f1f821359bc4f31a46a3f42d33efde41077fe09f7d5b23e9a57d9aba242bc555f6cd2cabd0be260a1825ed7b73e1100811d5e9cdb5b5f1027e1f0d3bcf47da588d4d8e3c8a917e6968056cb5e8887142765ff0ce967aee2d8788d12138c1b8bcc282183b7f0587cf50bd0ece0d0e15f13c8bc7850b84b6f9339e2c66ebc312ed7237f48688c000b20f5f825d6f9ef120cca72c8f31cfa575e1aa0c33f16e954df2dec4abe3737c8e197c5a894c7882cc4e5e5a28360c98a73a3eb1d3ff8a63e6ac9f152e2b0ef9e25824aac57f9f84a1c46c866bbda09fbe5662bc92636671d2f6d07703a4c29f6dd6030ca8f0b74331240ff8e9697b3bf0a3b65a6c39fda3575f8b593979926d06412598726952c808859923b1c2596d1766131f9b1ebda2e097407ba0ae48bcdb05bdb816236eb7e093455af6745582cbcbf2a7d3db69c42be19bf09edba673cb6611bce1b98dd4ba5cc39d0bbc3c2fcac451bf4946a9e713f40ea4645b97892fb554c6d8b45932fcd54a2e239c3f20c8b5214489f48acf5202099d56ad09a8ca3eb9b1585108585738c16656a81bf2ba3bfc7da34de978c310f3a4d8db03f41a021cbe447d927740ec12590967bebba34fd57efeaed0cce394ccd0297bc64607376bf1f0b160fe84838fd184f8e6f2b0ae3e88303c4cda251d7dff5b205370ee57dbac18c8ec7521530900e9171543998bb1528e374efadaffd3a4049791290033715b9aef258248697ba5894f0fb781d191c221ed08ce2ce96d5c6a3646022ab7084ca1f02debbac4af76a72c713b433ee3052e1910d6e091f5bfc3b8090a1f5920f4bba0d367caeec</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <categories>
+      
+      <category>加密文章</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>加密随笔</tag>
       
     </tags>
     
