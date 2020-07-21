@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-07-21T02:33:25.563Z</updated>
+  <updated>2020-07-21T11:32:21.573Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>机器学习1.0</title>
+    <title>logistic回归算法</title>
+    <link href="https://bestyangjh.com/2020/07/21/logsitic/"/>
+    <id>https://bestyangjh.com/2020/07/21/logsitic/</id>
+    <published>2020-07-21T03:22:24.000Z</published>
+    <updated>2020-07-21T11:32:21.573Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#7-21&lt;/p&gt;
+&lt;p&gt;logsitic算法实际是一种分类算法。比如在监督学习中某些有固定标准的分类。是否垃圾邮件，是否恶性肿瘤….&lt;/p&gt;
+&lt;p&gt;有新形式的假设函数引入&lt;img src=&quot;/2020/07/21/logsitic/1.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Mmachine Learning" scheme="https://bestyangjh.com/categories/Mmachine-Learning/"/>
+    
+    
+      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多元线性拟合以及Octave的使用</title>
+    <link href="https://bestyangjh.com/2020/07/21/task2/"/>
+    <id>https://bestyangjh.com/2020/07/21/task2/</id>
+    <published>2020-07-21T02:34:06.000Z</published>
+    <updated>2020-07-21T11:32:22.703Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#07-19&lt;/p&gt;
+&lt;p&gt;进阶学习，上一篇笔记介绍了n，n个特征变量的情况较为复杂，以x(i)来表示特征量，则产生与之相匹配的的seta（i),假设出x(0)恒等于1，则我们得到两个向量集，此时的假设函数h就可以写成，x的转置乘以seta的向量集。&lt;/p&gt;
+&lt;p&gt;代价函数
+        
+      
+    
+    </summary>
+    
+      <category term="Mmachine Learning" scheme="https://bestyangjh.com/categories/Mmachine-Learning/"/>
+    
+    
+      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML初识</title>
     <link href="https://bestyangjh.com/2020/07/16/task/"/>
     <id>https://bestyangjh.com/2020/07/16/task/</id>
     <published>2020-07-16T13:13:29.000Z</published>
-    <updated>2020-07-21T02:33:25.563Z</updated>
+    <updated>2020-07-21T11:32:22.703Z</updated>
     
     <summary type="html">
     

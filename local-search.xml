@@ -4,7 +4,57 @@
   
   
   <entry>
-    <title>机器学习1.0</title>
+    <title>logistic回归算法</title>
+    <link href="/2020/07/21/logsitic/"/>
+    <url>/2020/07/21/logsitic/</url>
+    
+    <content type="html"><![CDATA[<p>#7-21</p><p>logsitic算法实际是一种分类算法。比如在监督学习中某些有固定标准的分类。是否垃圾邮件，是否恶性肿瘤….</p><p>有新形式的假设函数引入<img src="/2020/07/21/logsitic/1.jpg" alt></p><p>这里介绍一个新定义，决策界限，就是已知的分类条件演化出的边界。<img src="/2020/07/21/logsitic/2.jpg" alt></p><p>代价函数(cost function)<br><img src="/2020/07/21/logsitic/4.jpg" alt><img src="/2020/07/21/logsitic/3.jpg" alt></p><p>要计算出J(θ)以及其偏导，如果采用梯度下降法，则产生这样的公式<img src="/2020/07/21/logsitic/6.jpg" alt></p><p>如果不需要自己编写算法测试收敛性的话，这里提供到一些<strong>高级算法</strong>来求解这两个值。<strong>共轭梯度法</strong>（BFGS）和L-BFGS（限制变尺度法）。他们拥有一个智能的内部循环称为<strong>线性搜索算法</strong>，所以不需要alpha。比梯度下降快很多。但是非常复杂。在Octave中，我们采用了如图两段代码来计算J(θ）的最小值。<strong>fminunc</strong>是无约束最小化函数。此时的θ至少是一个二维向量或者更大。 要了解如何调用以及参数含义。<br><img src="/2020/07/21/logsitic/5.jpg" alt></p><p>如果附带上Octave里的这种择优计算方法的实例的话，就应该是这样<img src="/2020/07/21/logsitic/4.png" alt></p><p>线性回归的一对多问题：针对每一个类别做一个伪训练集，选择其中之一为正样本，其他均为负样本，得到一条决策界限。将每个结果类别都以此方法训练一次（即y=i的情况各出现一次），带入x的值，看此时的h（也就是假设概率谁最大），则我们可以预测y就是这个值，不管他是什么类别的y。<img src="/2020/07/21/logsitic/7.jpg" alt></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Mmachine Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ML base</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>多元线性拟合以及Octave的使用</title>
+    <link href="/2020/07/21/task2/"/>
+    <url>/2020/07/21/task2/</url>
+    
+    <content type="html"><![CDATA[<p>#07-19</p><p>进阶学习，上一篇笔记介绍了n，n个特征变量的情况较为复杂，以x(i)来表示特征量，则产生与之相匹配的的seta（i),假设出x(0)恒等于1，则我们得到两个向量集，此时的假设函数h就可以写成，x的转置乘以seta的向量集。</p><p>代价函数的表达形式也出现相应的变化。</p><p>此处介绍一个特征选择方法，比如已知frontage和deepth，我们可以直接把两个特征量转化为area一个特征量，即可实现减少特征量的目的，通过除以max，可以使得特征归一，就是特征量的数据在同一个范围内。不使用特征缩放会导致梯度下降很难运行。</p><p>也可以使用特征归一化。或者调整学习速率alpha，每一次的迭代都造成seta（j）减小，直至最小值。当alpha大于期望的alpha，导致轮廓图上升或者震荡。当下降梯度过于缓慢可以适当增加alpha的值。</p><p>多项式回归，会遇到变量的高次问题以及各类函数进行拟合。</p><p>总结一下就是，<strong>单变量拟合入多元线性模型，高次函数拟合，特征变量归一</strong>。<img src="/2020/07/21/task2/2.jpg" alt></p><p>正规方程可以直接求解seta，可以不使用梯度下降。要注意在这个使用过程中，x是一个m*(n+1)的矩阵，与之前的引入x(0)=1相对应。</p><p>梯度下降需要选择alpha，需要多次迭代，但在n较大时也可以使用，适用于各类模型。</p><p>正规方程不要alpha，一次运算就可以，但是n较大时不好用（n&gt;10000).</p><p><img src="/2020/07/21/task2/3.jpg" alt></p><p>接下来介绍了Octave的语法即使用，<strong>它非常像Linux和python的结合版</strong>，如果之前有Linux的经验会好一些。我只划分板块复习使用：1.矩阵向量的基础表示  2.数据的移动和保存  3.数据的计算   4.可视化矩阵   5.for /while/ do while </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Mmachine Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ML base</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ML初识</title>
     <link href="/2020/07/16/task/"/>
     <url>/2020/07/16/task/</url>
     
