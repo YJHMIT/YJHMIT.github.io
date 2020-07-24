@@ -16,7 +16,7 @@
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
   <meta name="keywords" content="阳锦华 biu~">
-  <title>归档 - FluoxeTine&#39;s Blog</title>
+  <title>神经网络 - FluoxeTine&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -41,7 +41,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -127,6 +127,40 @@
             </span>
 
             
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期五, 七月 24日 2020, 11:28 晚上
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    563 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                      1 分钟
+                  </span>
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
+                    <i class="far fa-eye" aria-hidden="true"></i>
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>
+                
+              </p>
+            
           </div>
 
           
@@ -137,85 +171,79 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 21 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/04/15/hotel-2/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">秃头Tine的锅2.0</span>
-      <span style="float: right;">04-15</span>
-    </a>
-  
-    
-    <a href="/2020/04/12/hotel/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">秃头Tine的第一个锅</span>
-      <span style="float: right;">04-12</span>
-    </a>
-  
-    
-    <a href="/2020/04/10/login/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Springboot和Freemaker搞一个login叭</span>
-      <span style="float: right;">04-10</span>
-    </a>
-  
-    
-    <a href="/2020/04/08/spider/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Java也要当小叽居（？</span>
-      <span style="float: right;">04-08</span>
-    </a>
-  
-    
-    <a href="/2020/03/29/springboot3-0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">IDEA进阶任务</span>
-      <span style="float: right;">03-29</span>
-    </a>
-  
-    
-    <a href="/2020/03/22/springboot2-0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">IDEA+MyBatis整合操作MySQL</span>
-      <span style="float: right;">03-22</span>
-    </a>
-  
-    
-    <a href="/2020/03/17/springboot1-0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">IDEA+Springboot输出Hello World</span>
-      <span style="float: right;">03-17</span>
-    </a>
-  
-</div>
 
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/2020/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
-      ele.href += '#board';
-    }
-  </script>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5 z-depth-3" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <p>#07-24</p>
+<p>哇…补笔记太惨了吧，潦草一点也别怪我了。。。</p>
+<p>首先介绍一下非线性分类器，因为不是所有的样本都能以线性分类快速拟合的，毕竟二次项太多会导致计算成本变高是吧。</p>
+<p>在识别图片方面使用了像素识别，以像素来作为特征…非常非常多，所以导致普通的逻辑回归模型不能有效的处理这些样本，那就引入了处理大量样本的神经网络。</p>
+<p>神经的构造不多赘述，之前的高中生物课介绍得还可以<img src="/2020/07/24/neural/2.jpg" alt></p>
+<p>神经网络模型是许多逻辑单元按照不同层级组织起来的网络，每一层的输出变量都是下一层的输入变量。<img src="/2020/07/24/neural/1.jpg" alt></p>
+<p>下图为一个3层的神经网络，第一层成为输入层（Input Layer），最后一层称为输出层（Output Layer），中间一层成为隐藏层（Hidden Layers）。我们为每一层都增加一个偏差单位（bias unit）。<img src="/2020/07/24/neural/4.jpg" alt></p>
+<p>对着模型的具体含义就做下图解释，关系和角标比较复杂，建议多次食用。我们的这个模型中，每一个a都是由上一层的所有x和每一个x所对应决定的，这样叫做<strong>前向传播法</strong><img src="/2020/07/24/neural/3.jpg" alt></p>
+<p>对于此模型，我找到了很详细的解释，毕竟这些符号我是真的难搞<img src="/2020/07/24/neural/5.jpg" alt><img src="/2020/07/24/neural/6.jpg" alt></p>
+<p>我们得到的a的数据是更高级的特征值，相当于是x值的进化体，由x与θ决定的。因为是梯度下降的，所以a是变化的，这远远超过于前两个回归算法的。</p>
+<p>这里出现几个实例，是计算机二进制的AND，OR，NOT运算<img src="/2020/07/24/neural/7.jpg" alt><br>提炼一下，我就不一一截屏了，AND关系的参考权重是-30，+20，+20。OR的参考权重是10,20,20。NOT的参考权重是10，-20。</p>
+<p>以这些为基础将可以得到新型运算，我们的神经网络模型目的就是，每次传递更为高级的特征值，匹配权重进行更为精确的运算，在多次运算和调整过后得到合适的结果。</p>
+<p>多类分类的问题<img src="/2020/07/24/neural/8.jpg" alt></p>
 
-
-
-              </div>
             </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Machine-Learning/">Machine Learning</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/ML-stage1/">ML stage1</a>
+                    
+                  </span>
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+            </div>
+
+            
           </div>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -295,6 +323,57 @@
 
 
 
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var post = $('#post');
+      var toc = $('#toc');
+      var tocLimMax = post.offset().top + post.height() - navHeight;
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = $('#board-ctn').css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
 
 
 
@@ -334,7 +413,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "神经网络&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
