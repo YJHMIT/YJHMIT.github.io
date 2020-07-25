@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-07-24T16:27:13.658Z</updated>
+  <updated>2020-07-25T03:47:34.696Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://bestyangjh.com/2020/07/24/nw/"/>
     <id>https://bestyangjh.com/2020/07/24/nw/</id>
     <published>2020-07-24T15:57:57.000Z</published>
-    <updated>2020-07-24T16:27:13.658Z</updated>
+    <updated>2020-07-25T03:47:34.696Z</updated>
     
     <summary type="html">
     
@@ -105,12 +105,27 @@
     <link href="https://bestyangjh.com/2020/07/24/numpy1/"/>
     <id>https://bestyangjh.com/2020/07/24/numpy1/</id>
     <published>2020-07-24T12:47:13.000Z</published>
-    <updated>2020-07-24T12:47:13.931Z</updated>
+    <updated>2020-07-25T04:49:19.632Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;p&gt;#07-25&lt;/p&gt;
+&lt;p&gt;现学现更。。。拖不起了，老了老了…&lt;/p&gt;
+&lt;p&gt;NumPy(Numerical Python) 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。&lt;/p&gt;
+&lt;p&gt;接入主题，N
+        
+      
+    
     </summary>
     
+      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="NumPy" scheme="https://bestyangjh.com/tags/NumPy/"/>
     
   </entry>
   
@@ -203,7 +218,7 @@
     <link href="https://bestyangjh.com/2020/07/16/back/"/>
     <id>https://bestyangjh.com/2020/07/16/back/</id>
     <published>2020-07-16T02:39:44.000Z</published>
-    <updated>2020-07-16T13:12:25.660Z</updated>
+    <updated>2020-07-25T03:47:35.199Z</updated>
     
     <summary type="html">
     
@@ -211,10 +226,10 @@
     
     </summary>
     
-      <category term="加密文章" scheme="https://bestyangjh.com/categories/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
+      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="加密随笔" scheme="https://bestyangjh.com/tags/%E5%8A%A0%E5%AF%86%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
