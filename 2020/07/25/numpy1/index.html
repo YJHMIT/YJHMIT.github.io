@@ -130,7 +130,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期五, 七月 24日 2020, 8:47 晚上
+                  星期六, 七月 25日 2020, 11:47 中午
                 </p>
               
 
@@ -185,9 +185,9 @@
               <p>#07-25</p>
 <p>现学现更。。。拖不起了，老了老了…</p>
 <p>NumPy(Numerical Python) 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。</p>
-<p>接入主题，N 维数组对象 ndarray，它是一系列同类型数据的集合，以0下标为开始进行集合中元素的索引。ndarray 对象是用于存放同类型元素的多维数组。 ndarray 中的每个元素在内存中都有相同存储大小的区域。 <img src="/2020/07/24/numpy1/1.jpg" alt></p>
-<p>举个简单的例子<img src="/2020/07/24/numpy1/2.jpg" alt></p>
-<p>NumPy的数据类型<img src="/2020/07/24/numpy1/3.jpg" alt>字节顺序是通过对数据类型预先设定”&lt;”或”&gt;”来决定的。”&lt;”意味着小端法(最小值存储在最小的地址，即低位组放在最前面)。”&gt;”意味着大端法(最重要的字节存储在最小的地址，即高位组放在最前面)。</p>
+<p>接入主题，N 维数组对象 ndarray，它是一系列同类型数据的集合，以0下标为开始进行集合中元素的索引。ndarray 对象是用于存放同类型元素的多维数组。 ndarray 中的每个元素在内存中都有相同存储大小的区域。 <img src="/2020/07/25/numpy1/1.jpg" alt></p>
+<p>举个简单的例子<img src="/2020/07/25/numpy1/2.jpg" alt></p>
+<p>NumPy的数据类型<img src="/2020/07/25/numpy1/3.jpg" alt>字节顺序是通过对数据类型预先设定”&lt;”或”&gt;”来决定的。”&lt;”意味着小端法(最小值存储在最小的地址，即低位组放在最前面)。”&gt;”意味着大端法(最重要的字节存储在最小的地址，即高位组放在最前面)。</p>
 <pre><code>numpy.dtype(object, align, copy)</code></pre><p>object - 要转换为的数据类型对象,align - 如果为 true，填充字段使其类似 C 的结构体,copy - 复制 dtype 对象 ，如果为 false，则是对内置数据类型对象的引用.</p>
 <pre><code>import numpy as np
 # 使用标量类型
@@ -199,16 +199,16 @@ student = np.dtype([(&#39;name&#39;,&#39;S20&#39;), (&#39;age&#39;, &#39;i1&#39;
 a = np.array([(&#39;abc&#39;, 21, 50),(&#39;xyz&#39;, 18, 75)], dtype = student) 
 print(a)</code></pre><p>比如在此段代码中，name对应了abc，xyz的位置,age对应了21,18，marks对应了50,75。如果要输出</p>
 <pre><code>print(a[&#39;age&#39;])</code></pre><p>则输出了：<strong>[21 18]</strong></p>
-<p>每个内建类型都有一个唯一定义它的字符代码<img src="/2020/07/24/numpy1/4.jpg" alt></p>
-<p>NumPy 数组的维数称为秩（rank），秩就是轴的数量，即数组的维度。ndarray的一些主要属性,使用都比较普通，不做详细介绍了<img src="/2020/07/24/numpy1/5.jpg" alt></p>
+<p>每个内建类型都有一个唯一定义它的字符代码<img src="/2020/07/25/numpy1/4.jpg" alt></p>
+<p>NumPy 数组的维数称为秩（rank），秩就是轴的数量，即数组的维度。ndarray的一些主要属性,使用都比较普通，不做详细介绍了<img src="/2020/07/25/numpy1/5.jpg" alt></p>
 <pre><code>import numpy as np 
 
 a = np.arange(24)  
 print (a.ndim)             # a 现只有一个维度
 # 现在调整其大小
 b = a.reshape(2,4,3)  # b 现在拥有三个维度
-print (b.ndim)</code></pre><p>这里的reshape用法可以注意一下<img src="/2020/07/24/numpy1/6.jpg" alt></p>
-<p>flags的返回信息挺多的<img src="/2020/07/24/numpy1/7.jpg" alt></p>
+print (b.ndim)</code></pre><p>这里的reshape用法可以注意一下<img src="/2020/07/25/numpy1/6.jpg" alt></p>
+<p>flags的返回信息挺多的<img src="/2020/07/25/numpy1/7.jpg" alt></p>
 <pre><code>import numpy as np 
 
 x = np.array([1,2,3,4,5])  
