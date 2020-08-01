@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-07-25T04:54:59.226Z</updated>
+  <updated>2020-08-01T04:08:25.313Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ex1</title>
+    <link href="https://bestyangjh.com/2020/08/01/ex1/"/>
+    <id>https://bestyangjh.com/2020/08/01/ex1/</id>
+    <published>2020-08-01T01:47:04.000Z</published>
+    <updated>2020-08-01T04:08:25.313Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#08-01&lt;/p&gt;
+&lt;p&gt;这个周做暑期实践啊啊啊。。。事情真的多，答应丹姐出一篇推送之后我真是太苦了，修图，剪视频，排版公众号，啧啧啧，累死我啦。不过这就是被逼出来的潜力哈哈哈，之前也没想到自己能做这些的。再加上复习的事情，多多少少耽搁了一下我的进度。&lt;/p&gt;
+&lt;p&gt;其实
+        
+      
+    
+    </summary>
+    
+      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="ML ex" scheme="https://bestyangjh.com/tags/ML-ex/"/>
+    
+  </entry>
+  
+  <entry>
     <title>numpy1</title>
     <link href="https://bestyangjh.com/2020/07/25/numpy1/"/>
     <id>https://bestyangjh.com/2020/07/25/numpy1/</id>
     <published>2020-07-25T03:47:13.000Z</published>
-    <updated>2020-07-25T04:54:59.226Z</updated>
+    <updated>2020-07-26T04:36:49.470Z</updated>
     
     <summary type="html">
     
@@ -523,20 +551,6 @@
     </summary>
     
       <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>First</title>
-    <link href="https://bestyangjh.com/2019/11/24/first/"/>
-    <id>https://bestyangjh.com/2019/11/24/first/</id>
-    <published>2019-11-24T11:36:58.000Z</published>
-    <updated>2019-11-24T11:36:59.013Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
     
     
   </entry>

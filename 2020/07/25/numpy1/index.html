@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    635 字
+                    1k 字
                   </span>
                 
 
@@ -147,7 +147,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      2 分钟
+                      4 分钟
                   </span>
                 
 
@@ -213,13 +213,36 @@ print (b.ndim)</code></pre><p>这里的reshape用法可以注意一下<img src="
 
 x = np.array([1,2,3,4,5])  
 print (x.flags)</code></pre><p>输出结果为</p>
-<pre><code> C_CONTIGUOUS : True
-  F_CONTIGUOUS : True
-  OWNDATA : True
-  WRITEABLE : True
-  ALIGNED : True
-  WRITEBACKIFCOPY : False
-  UPDATEIFCOPY : False</code></pre>
+<pre><code>C_CONTIGUOUS : True
+F_CONTIGUOUS : True
+OWNDATA : True
+WRITEABLE : True
+ALIGNED : True
+WRITEBACKIFCOPY : False
+UPDATEIFCOPY : False</code></pre><p><strong>numpy.empty</strong>方法用来创建一个指定形状（shape）、数据类型（dtype）且未初始化的数组：</p>
+<pre><code>numpy.empty(shape, dtype = float, order = &#39;C&#39;)</code></pre><p>shape表示数组形状，dtype数据类型，order是”C”和”F”表示行优先和列优先储存在计算机中的顺序。</p>
+<p>以及注意一下numpy.zeros和numpy.ones是输出纯0和纯1的问题。asarray转换列表，元组为adarray。</p>
+<p>frombuffer 接受 buffer 输入参数，用于实现动态数组，以流的形式读入转化成 ndarray 对象。</p>
+<pre><code>numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)</code></pre><p>fromiter从可迭代对象里建立ndarray对象，返回一维数组。</p>
+<pre><code>numpy.fromiter(iterable, dtype, count=-1)
+import numpy as np 
+
+# 使用 range 函数创建列表对象  
+list=range(5)
+it=iter(list)
+
+# 使用迭代器创建 ndarray 
+x=np.fromiter(it, dtype=float)
+print(x)</code></pre><p>建立有范围的数组,起始值，终止值和步长，</p>
+<pre class="line-numbers language-import"><code class="language-import">x = np.arange(10,20,2)  
+print (x)```
+
+numpy.linspace 函数用于创建一个一维数组，数组是一个等差数列构成的,将 endpoint 设为 false，不包含终止值。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None)</p>
+<p>import numpy as np<br>a = np.linspace(1,10,10)<br>print(a)</p>
+<pre><code>
+numpy.logspace 函数用于创建一个于等比数列。</code></pre><p>np.logspace(start, stop, num=50, endpoint=True, base=10.0, dtype=None)<br>import numpy as np<br>a = np.logspace(0,9,10,base=2)<br>print (a)<br>```<br>numpy前面这些东西都是基础了…不是之前说组里要笔记估计是不会写了hhh…等学到难一点再写numpy的笔记吧。我的编程实现作业还没写呢。。。还得做一个Django的博客，害真是的。。。</p>
+
             </div>
             <hr>
             <div>
