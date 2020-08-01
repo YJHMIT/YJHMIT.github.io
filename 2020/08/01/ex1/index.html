@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    878 字
+                    883 字
                   </span>
                 
 
@@ -222,7 +222,8 @@ A=eye(5);
 % ===========================================
 
 
-end</code></pre><p><strong><em>plotData</em></strong></p>
+end
+</code></pre><p><strong><em>plotData</em></strong></p>
 <p>代码提示也比较明显，都不用补很多东西…</p>
 <pre><code>function plotData(x, y)
 %PLOTDATA Plots the data points x and y into a new figure 
@@ -248,40 +249,59 @@ ylabel(&#39;Profit in $10,000s&#39;);
 
 % ============================================================
 
-end```
+end
+</code></pre><p><strong><em>computeCost</em></strong></p>
+<p>计算代价函数，尽量采用向量运算，这考验对代价函数J的熟悉程度了。</p>
+<pre><code>function J = computeCost(X, y, theta)
+%COMPUTECOST Compute cost for linear regression
+%   J = COMPUTECOST(X, y, theta) computes the cost of using theta as the
+%   parameter for linear regression to fit the data points in X and y
 
-***computeCost***
+% Initialize some useful values
+m = length(y); % number of training examples
 
-计算代价函数，尽量采用向量运算，这考验对代价函数J的熟悉程度了。</code></pre><p>function J = computeCost(X, y, theta)<br>%COMPUTECOST Compute cost for linear regression<br>%   J = COMPUTECOST(X, y, theta) computes the cost of using theta as the<br>%   parameter for linear regression to fit the data points in X and y</p>
-<p>% Initialize some useful values<br>m = length(y); % number of training examples</p>
-<p>% You need to return the following variables correctly<br>J = 0;</p>
-<p>% ====================== YOUR CODE HERE ======================<br>% Instructions: Compute the cost of a particular choice of theta<br>%               You should set J to the cost.<br>J=sum((X*theta-y).^2)/m/2;</p>
-<p>% =========================================================================</p>
-<p>end</p>
-<pre><code>
+% You need to return the following variables correctly 
+J = 0;
 
-***gradientDescent***
-梯度下降不是很好理解，对于维度的转化要明白...还有就是微分了，之前推过可能还好，这个公式我好像没推导，自己用起来就卡了一下。
-</code></pre><p>function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)<br>%GRADIENTDESCENT Performs gradient descent to learn theta<br>%   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by<br>%   taking num_iters gradient steps with learning rate alpha</p>
-<p>% Initialize some useful values<br>m = length(y); % number of training examples<br>J_history = zeros(num_iters, 1);</p>
-<p>for iter = 1:num_iters</p>
-<pre><code>% ====================== YOUR CODE HERE ======================
-% Instructions: Perform a single gradient step on the parameter vector
-%               theta. 
-%
-% Hint: While debugging, it can be useful to print out the values
-%       of the cost function (computeCost) and gradient here.
-%
-theta=theta-alpha*X&#39;*(X*theta-y)/m
+% ====================== YOUR CODE HERE ======================
+% Instructions: Compute the cost of a particular choice of theta
+%               You should set J to the cost.
+J=sum((X*theta-y).^2)/m/2;
+
+% =========================================================================
+
+end
+</code></pre><p><strong><em>gradientDescent</em></strong><br>梯度下降不是很好理解，对于维度的转化要明白…还有就是微分了，之前推过可能还好，这个公式我好像没推导，自己用起来就卡了一下。</p>
+<pre><code>function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
+%GRADIENTDESCENT Performs gradient descent to learn theta
+%   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by 
+%   taking num_iters gradient steps with learning rate alpha
+
+% Initialize some useful values
+m = length(y); % number of training examples
+J_history = zeros(num_iters, 1);
+
+for iter = 1:num_iters
+
+    % ====================== YOUR CODE HERE ======================
+    % Instructions: Perform a single gradient step on the parameter vector
+    %               theta. 
+    %
+    % Hint: While debugging, it can be useful to print out the values
+    %       of the cost function (computeCost) and gradient here.
+    %
+    theta=theta-alpha*X&#39;*(X*theta-y)/m
 
 
-% ============================================================
+    % ============================================================
 
-% Save the cost J in every iteration    
-J_history(iter) = computeCost(X, y, theta)</code></pre><p>end</p>
-<p>end</p>
-<p>```</p>
+    % Save the cost J in every iteration    
+    J_history(iter) = computeCost(X, y, theta)
 
+end
+
+end
+</code></pre>
             </div>
             <hr>
             <div>
