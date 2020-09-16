@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>FluoxeTine&#39;s Blog</title>
+  <title>Religion&#39;s Blog</title>
   
-  <subtitle>我在人间，贩卖温柔</subtitle>
+  <subtitle>从荒无人烟走到繁花盛开</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-08-01T04:14:02.888Z</updated>
+  <updated>2020-09-16T11:11:11.305Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小R再次起航...</title>
+    <link href="https://bestyangjh.com/2020/09/16/ml1/"/>
+    <id>https://bestyangjh.com/2020/09/16/ml1/</id>
+    <published>2020-09-16T08:39:49.000Z</published>
+    <updated>2020-09-16T11:11:11.305Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#09-16&lt;/p&gt;
+&lt;p&gt;对权重进行约束避免过度拟合所以引入了正则化，那么在新的学习中有岭回归和套索回归，弹性网络这些方法实现对于权重的约束。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;岭回归&lt;/strong&gt;也叫做吉洪诺夫正则化，添加一个正则项。。。啧更新不下去了。等会儿吧，现在环
+        
+      
+    
+    </summary>
+    
+      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ex1</title>
     <link href="https://bestyangjh.com/2020/08/01/ex1/"/>
     <id>https://bestyangjh.com/2020/08/01/ex1/</id>
     <published>2020-08-01T01:47:04.000Z</published>
-    <updated>2020-08-01T04:14:02.888Z</updated>
+    <updated>2020-08-01T08:11:27.687Z</updated>
     
     <summary type="html">
     
@@ -218,7 +246,7 @@
     <link href="https://bestyangjh.com/2020/07/16/task/"/>
     <id>https://bestyangjh.com/2020/07/16/task/</id>
     <published>2020-07-16T13:13:29.000Z</published>
-    <updated>2020-07-24T14:50:37.106Z</updated>
+    <updated>2020-09-16T10:57:26.596Z</updated>
     
     <summary type="html">
     
@@ -527,31 +555,6 @@
     
     
       <category term="Mysql" scheme="https://bestyangjh.com/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA+Springboot输出Hello World</title>
-    <link href="https://bestyangjh.com/2020/03/17/springboot1-0/"/>
-    <id>https://bestyangjh.com/2020/03/17/springboot1-0/</id>
-    <published>2020-03-17T02:04:00.000Z</published>
-    <updated>2020-03-30T11:23:32.574Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;尝试系统和细节的使用springboot的第一步&lt;/p&gt;
-&lt;h1 id=&quot;2020-03-17&quot;&gt;&lt;a href=&quot;#2020-03-17&quot; class=&quot;headerlink&quot; title=&quot;2020 03-17&quot;&gt;&lt;/a&gt;2020
-        
-      
-    
-    </summary>
-    
-      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
     
   </entry>
   

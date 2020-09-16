@@ -16,7 +16,7 @@
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
   <meta name="keywords" content="阳锦华 biu~">
-  <title>ex1 - FluoxeTine&#39;s Blog</title>
+  <title>ex1 - Religion&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -45,7 +45,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>FluoxeTine's Blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Religion's Blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    883 字
+                    1.3k 字
                   </span>
                 
 
@@ -147,7 +147,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      4 分钟
+                      6 分钟
                   </span>
                 
 
@@ -196,15 +196,15 @@
 </ol>
 </li>
 <li>选做部分<ol>
-<li>gradientDescentMulti.m</li>
-<li>computeCostMulti.m</li>
+<li>gradientDescentMulti.m(√）</li>
+<li>computeCostMulti.m（√）</li>
 <li>featureNormalize.m</li>
 <li>normalEqn.m</li>
 </ol>
 </li>
 </ul>
 <p><strong><em>warmUpExercise</em></strong></p>
-<p>这个很好搞，你翻译了文档就能看到eye(5)的提示信息，在命令窗口<strong>run(‘ex1.m’)</strong>就可以看到矩阵。</p>
+<p>这个很好搞，你翻译了文档就能看到eye(5)的提示信息，在命令窗口<strong>run(‘ex1.m’)</strong>就可以看到矩阵。<img src="/2020/08/01/ex1/1.jpg" alt></p>
 <pre><code>function A = warmUpExercise()
 %WARMUPEXERCISE Example function in octave
 %   A = WARMUPEXERCISE() is an example function that returns the 5x5 identity matrix
@@ -251,7 +251,7 @@ ylabel(&#39;Profit in $10,000s&#39;);
 
 end
 </code></pre><p><strong><em>computeCost</em></strong></p>
-<p>计算代价函数，尽量采用向量运算，这考验对代价函数J的熟悉程度了。</p>
+<p>计算代价函数，尽量采用向量运算，采用向量运算的时候，θ0的那一部分是相当于θ0*x0（x0=1），这样逐步表示，就不用带入具体的h（x）了。这考验对代价函数J的熟悉程度。</p>
 <pre><code>function J = computeCost(X, y, theta)
 %COMPUTECOST Compute cost for linear regression
 %   J = COMPUTECOST(X, y, theta) computes the cost of using theta as the
@@ -271,7 +271,41 @@ J=sum((X*theta-y).^2)/m/2;
 % =========================================================================
 
 end
-</code></pre><p><strong><em>gradientDescent</em></strong><br>梯度下降不是很好理解，对于维度的转化要明白…还有就是微分了，之前推过可能还好，这个公式我好像没推导，自己用起来就卡了一下。</p>
+</code></pre><p><strong><em>featureNormalize</em></strong><br>实现特征归一化，特征取值差距太大会导致下降时间变长。mean函数计算平均值为μ，std函数计算标准差sigma。</p>
+<pre><code>function [X_norm, mu, sigma] = featureNormalize(X)
+%FEATURENORMALIZE Normalizes the features in X 
+%   FEATURENORMALIZE(X) returns a normalized version of X where
+%   the mean value of each feature is 0 and the standard deviation
+%   is 1. This is often a good preprocessing step to do when
+%   working with learning algorithms.
+
+% You need to set these values correctly
+X_norm = X;
+mu = zeros(1, size(X, 2));
+sigma = zeros(1, size(X, 2));
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: First, for each feature dimension, compute the mean
+%               of the feature and subtract it from the dataset,
+%               storing the mean value in mu. Next, compute the 
+%               standard deviation of each feature and divide
+%               each feature by it&#39;s standard deviation, storing
+%               the standard deviation in sigma. 
+%
+%               Note that X is a matrix where each column is a 
+%               feature and each row is an example. You need 
+%               to perform the normalization separately for 
+%               each feature. 
+%
+% Hint: You might find the &#39;mean&#39; and &#39;std&#39; functions useful.
+%       
+mu=mean(X);
+sigma=std(X);
+X_norm=(X-mu)./sigma;
+% ============================================================
+
+end
+</code></pre><p><strong><em>gradientDescent</em></strong><br>梯度下降不是很好理解，对于维度的转化要明白…还有就是微分了，之前推过可能还好，这个公式我好像没推导，自己用起来就卡了一下。<img src="/2020/08/01/ex1/2.jpg" alt></p>
 <pre><code>function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 %GRADIENTDESCENT Performs gradient descent to learn theta
 %   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by 
@@ -301,7 +335,33 @@ for iter = 1:num_iters
 end
 
 end
-</code></pre>
+</code></pre><p><strong><em>normalEqn</em></strong><br>正规方程求theta还是很爽，毕竟不需要选择学习速率是吧哈哈哈，也不用迭代。直接实现吧，这个语法之前也给过。</p>
+<pre><code>function [theta] = normalEqn(X, y)
+%NORMALEQN Computes the closed-form solution to linear regression 
+%   NORMALEQN(X,y) computes the closed-form solution to linear 
+%   regression using the normal equations.
+
+theta = zeros(size(X, 2), 1);
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: Complete the code to compute the closed form solution
+%               to linear regression and put the result in theta.
+%
+
+% ---------------------- Sample Solution ----------------------
+
+theta=pinv(x&#39;*x)*x&#39;*y;
+
+
+% -------------------------------------------------------------
+
+
+% ============================================================
+
+end
+</code></pre><p>康康画出来的图像叭,这个大作业就完事儿咯~</p>
+<p><img src="/2020/08/01/ex1/3.jpg" alt></p>
+
             </div>
             <hr>
             <div>
