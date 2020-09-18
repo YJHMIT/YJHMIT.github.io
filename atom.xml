@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-09-16T11:11:11.305Z</updated>
+  <updated>2020-09-18T12:53:42.433Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>小R再次起航...</title>
+    <title>如何筛选和改进算法</title>
     <link href="https://bestyangjh.com/2020/09/16/ml1/"/>
     <id>https://bestyangjh.com/2020/09/16/ml1/</id>
     <published>2020-09-16T08:39:49.000Z</published>
-    <updated>2020-09-16T11:11:11.305Z</updated>
+    <updated>2020-09-18T12:53:42.433Z</updated>
     
     <summary type="html">
     
@@ -30,8 +30,8 @@
         
         
           &lt;p&gt;#09-16&lt;/p&gt;
-&lt;p&gt;对权重进行约束避免过度拟合所以引入了正则化，那么在新的学习中有岭回归和套索回归，弹性网络这些方法实现对于权重的约束。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;岭回归&lt;/strong&gt;也叫做吉洪诺夫正则化，添加一个正则项。。。啧更新不下去了。等会儿吧，现在环
+&lt;p&gt;什么叫做！！波澜曲折！！！我已经写了一个小时的笔记电脑死机然后暴力重启全部丢失了哈哈哈哈！！&lt;/p&gt;
+&lt;p&gt;一下子不知道从何写起，突然被打断之后…好像是说到自己因为期末考试很长时间没有学习ML，那在课程过半且体系不完全的情况下，我想有必要对之前的
         
       
     
