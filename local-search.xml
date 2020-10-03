@@ -54,31 +54,6 @@
   
   
   <entry>
-    <title>SVM支持向量机</title>
-    <link href="/2020/09/28/vsm/"/>
-    <url>/2020/09/28/vsm/</url>
-    
-    <content type="html"><![CDATA[<p>#9-28</p><p>阿这。。。其实我把视频硬刚完之后没咋明白这是啥意思。跟之前太久没学有关，有些断层了。</p><p>支持向量机算法被广泛应用，它在学习复杂的非线性方程时提供了一种更为清晰更为强大。支持向量机方法是建立在统计学习理论的VC 维理论和结构风险最小原理基础上的，根据有限的样本信息在模型的复杂性（即对特定训练样本的学习精度，Accuracy）和学习能力（即无错误地识别任意样本的能力）之间寻求最佳折衷，以期获得最好的推广能力（或称泛化能力）。</p><p>在大牛的课程中，我们逐渐从逻辑回归逐渐转换成向量机。<img src="/2020/09/28/vsm/1.jpg" alt></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Machine Learning</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>ML base</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>XML数据相似度的研究</title>
     <link href="/2020/09/26/xml1/"/>
     <url>/2020/09/26/xml1/</url>
