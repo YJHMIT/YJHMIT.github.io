@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-09-26T07:21:01.313Z</updated>
+  <updated>2020-10-03T09:49:56.616Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>XML数据相似度的研究</title>
-    <link href="https://bestyangjh.com/2020/09/26/xml1/"/>
-    <id>https://bestyangjh.com/2020/09/26/xml1/</id>
-    <published>2020-09-26T06:23:29.000Z</published>
-    <updated>2020-09-26T07:21:01.313Z</updated>
+    <title>基于核矩阵学习的XML文档相似度量方法</title>
+    <link href="https://bestyangjh.com/2020/10/03/xml2/"/>
+    <id>https://bestyangjh.com/2020/10/03/xml2/</id>
+    <published>2020-10-03T08:53:03.000Z</published>
+    <updated>2020-10-03T09:49:56.616Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,62 @@
       
         
         
-          &lt;p&gt;粗略阅读第一篇paper的总结&lt;/p&gt;
+          &lt;p&gt;第二篇已经读完有几天了，今天终于把第三篇也看完了，那么久一次性总结一下吧。&lt;/p&gt;
+&lt;h2 id=&quot;2020-10-2&quot;&gt;&lt;a href=&quot;#2020-10-2&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="XML" scheme="https://bestyangjh.com/categories/XML/"/>
+    
+    
+      <category term="XML相似度" scheme="https://bestyangjh.com/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVM支持向量机</title>
+    <link href="https://bestyangjh.com/2020/09/28/vsm/"/>
+    <id>https://bestyangjh.com/2020/09/28/vsm/</id>
+    <published>2020-09-28T08:22:04.000Z</published>
+    <updated>2020-09-30T07:01:45.623Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#9-28&lt;/p&gt;
+&lt;p&gt;阿这。。。其实我把视频硬刚完之后没咋明白这是啥意思。跟之前太久没学有关，有些断层了。&lt;/p&gt;
+&lt;p&gt;支持向量机算法被广泛应用，它在学习复杂的非线性方程时提供了一种更为清晰更为强大。支持向量机方法是建立在统计学习理论的VC
+        
+      
+    
+    </summary>
+    
+      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XML数据相似度的研究</title>
+    <link href="https://bestyangjh.com/2020/09/26/xml1/"/>
+    <id>https://bestyangjh.com/2020/09/26/xml1/</id>
+    <published>2020-09-26T06:23:29.000Z</published>
+    <updated>2020-10-03T09:49:58.027Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;首次尝试阅读paper，结构化递归计算XML文档相似度&lt;/p&gt;
 &lt;h2 id=&quot;2020-9-26&quot;&gt;&lt;a href=&quot;#2020-9-26&quot; class=&quot;headerlink&quot;
         
       
@@ -48,7 +103,7 @@
     <link href="https://bestyangjh.com/2020/09/26/tf-idf/"/>
     <id>https://bestyangjh.com/2020/09/26/tf-idf/</id>
     <published>2020-09-26T01:36:23.000Z</published>
-    <updated>2020-09-26T06:23:00.292Z</updated>
+    <updated>2020-10-03T09:49:58.028Z</updated>
     
     <summary type="html">
     
@@ -56,7 +111,8 @@
       
         
         
-          &lt;p&gt;TF-IDF（term frequency–inverse document
+          &lt;p&gt;TF-IDF的粗略学习&lt;/p&gt;
+&lt;h2 id=&quot;2020-9-26&quot;&gt;&lt;a href=&quot;#2020-9-26&quot; class=&quot;headerlink&quot; title=&quot;#2020-9-26&quot;&gt;&lt;/a&gt;#2020-9-26&lt;/h2&gt;&lt;p&gt;TF-IDF（term
         
       
     
@@ -500,60 +556,6 @@
     
     
       <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Springboot和Freemaker搞一个login叭</title>
-    <link href="https://bestyangjh.com/2020/04/10/login/"/>
-    <id>https://bestyangjh.com/2020/04/10/login/</id>
-    <published>2020-04-10T14:45:00.000Z</published>
-    <updated>2020-04-11T14:43:58.862Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;login2.0&lt;/p&gt;
-&lt;h2 id=&quot;2020-04-10&quot;&gt;&lt;a href=&quot;#2020-04-10&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
-    
-      <category term="Freemaker" scheme="https://bestyangjh.com/tags/Freemaker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java也要当小叽居（？</title>
-    <link href="https://bestyangjh.com/2020/04/08/spider/"/>
-    <id>https://bestyangjh.com/2020/04/08/spider/</id>
-    <published>2020-04-08T10:21:16.000Z</published>
-    <updated>2020-04-11T14:44:25.393Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Java也要试试爬虫的，小阳在线头秃..&lt;/p&gt;
-&lt;h2 id=&quot;2020-04-08&quot;&gt;&lt;a href=&quot;#2020-04-08&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="爬虫" scheme="https://bestyangjh.com/categories/%E7%88%AC%E8%99%AB/"/>
-    
-    
-      <category term="Maven" scheme="https://bestyangjh.com/tags/Maven/"/>
     
   </entry>
   
