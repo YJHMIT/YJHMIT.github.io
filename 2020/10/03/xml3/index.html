@@ -16,7 +16,7 @@
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
   <meta name="keywords" content="阳锦华 biu~">
-  <title>Religion&#39;s Blog</title>
+  <title>语义相似度的研究及其应用 - Religion&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -41,7 +41,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -127,12 +127,42 @@
             </span>
 
             
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期六, 十月 3日 2020, 7:57 晚上
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    1k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                      3 分钟
+                  </span>
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
+                    <i class="far fa-eye" aria-hidden="true"></i>
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>
+                
+              </p>
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
-            </div>
           
         </div>
       </div>
@@ -141,160 +171,88 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5 z-depth-3" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <p>#2020-10-03</p>
+<p>基于编辑距离的同时考虑语义和结构的相似度算法，这篇paper其实很详细内容也非常的多，写得很清楚也举了例子说明真的非常适合我这种新手阅读了。以这篇论文结束我的第一次paper之行，对于我有个比较好的总结作用。</p>
+<p>起初找到的最后一篇论文其实并不是这篇，所以导致了我最后又重新找了一篇论文。之前的那一篇是《基于加权余弦相似度的XML文档聚类研究》，在最初找论文的时候关注点太浅薄了，所以出现了偏差。读了两篇paper之后才开始有点感觉，逐渐通过abstract能判别本篇文章是不是适合我当下关注的问题。果然学习是需要循序渐进的吧。</p>
+<p>这篇博士论文非常详细，并且整份论文有一百八十几页，涵盖面也很广，我挑选出了绪论和第四章对XML相似度的分析来阅读。</p>
+<p>首先是绪论，整体介绍相似度模型：几何模型，特征对比模型。相似度计算步骤，特征的提取与选择–&gt;对象的表示（多个特征表示）–&gt;传统相似度的计算方法（也可以用空间模型，各种距离来描述相似度）。</p>
+<ul>
+<li>节点之间相似度的计算</li>
+</ul>
+<p>节点之间的相似度，存在着字符串相似和语义相似的两种情况。对节点标签进行预处理，利用用户词典进行拓展，去除分隔符得到词集。节点之间语义相似度的计算就变成了词集之间语义相似度的计算<img src="/2020/10/03/xml3/1.jpg" alt></p>
+<p>字符串相似度：编辑距离（莱文斯坦距离）指两个子串之间，从一个转换成另外一个所需的最小编辑次数，利用编辑距离转换为相似度公式<img src="/2020/10/03/xml3/2.jpg" alt></p>
+<p>语义相似度：1.词汇之间的相似度：SSBC方法（是作者在前文改进的语义模糊匹配算法）本体中的概念定义为模糊集合，通过模糊集合的相似度来判断语义的相似度。2.利用词汇之间相似度的计算值来计算节点标记之间的语义相似度<img src="/2020/10/03/xml3/3.jpg" alt></p>
+<p>节点之间的语言学相似度：为节点之间编辑相似度（字符串相似度）和语义相似度的<strong>最大值</strong><img src="/2020/10/03/xml3/4.jpg" alt></p>
+<ul>
+<li>路径之间相似度的计算</li>
+</ul>
+<p>先明确子序列，相似序列，最大相似子序列MSS的概念和路径相似度计算公式<img src="/2020/10/03/xml3/5.jpg" alt>因为节点距离根的程度不一，所以对于节点赋值的权重就不一样，那么对于这个相似度算法就需要加权改进<img src="/2020/10/03/xml3/6.jpg" alt></p>
+<ul>
+<li>计算文档之间的相似度</li>
+</ul>
+<p>文档之间相似的路径数目越多，两个文档越相似，对文档中每条路径都进行相似度计算，取最大相似度的平均值<img src="/2020/10/03/xml3/8.jpg" alt></p>
+<p>文档最后介绍了聚类方面的改革，有空看完和之前《基于加权余弦相似度的XML文档聚类研究》一起更了。</p>
+<p>总体说来，XMLSim算法也是为了兼顾语义和结构两方面对相似度的影响，将XML文档解析成标签树，再分解成从根节点到叶子节点的路经集合。<strong>将XML文档相似度</strong>转换成<strong>路径集合相似度</strong>之间的计算。本文新提出的是XMLSim算法，考虑节点标记的语义模糊的相似度和字符串的编辑距离，在这基础上得到最终的节点之间的相似度ESim，又在路径结构具有偏序关系的基础上计算路径的相似度NPathSim，在路径相似度的基础上计算文档之间的相似度。</p>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/17/springboot1-0/" target="_self">
-          <img src="/img/background.jpg" alt="IDEA+Springboot输出Hello World"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/17/springboot1-0/">
-        <p class="h4 index-header">IDEA+Springboot输出Hello World</p>
-      </a>
-
-      <a href="/2020/03/17/springboot1-0/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">尝试系统和细节的使用springboot的第一步
-2020 03-17
-本次操作所需材料：*IDEA旗舰版(简单上手…
-IDEA神奇创建springboot项目，史上无敌讨厌的就是导包了。所以给各位摸到了一个自动导包的好方法。
-1.首先File-&gt;new-&gt;moudle,你会看到一个这亚子的界面
-2.然后正常下一步
-3.选择依赖，当然这可能是我初学一个很困扰的点，每次都不知道该选啥。,界面比较简单，就web就好了。
-4.然后我导包…嗯或许是版本跟不上的原因，也有time out这样的情况，所以
-5.导入maven依赖，这个也很强，添加了阿里镜像。首先，紧接着省事儿许多。
-6.害，这</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-17&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Springboot/">Springboot</a>&nbsp;
-          &nbsp;
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2019/11/24/first/" target="_self">
-          <img src="/img/background.jpg" alt="First"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2019/11/24/first/">
-        <p class="h4 index-header">First</p>
-      </a>
-
-      <a href="/2019/11/24/first/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"></div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-24&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2019/11/24/hello-world/" target="_self">
-          <img src="/img/background.jpg" alt="Hello World"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2019/11/24/hello-world/">
-        <p class="h4 index-header">Hello World</p>
-      </a>
-
-      <a href="/2019/11/24/hello-world/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
-More info: Writing
-Run server$ hexo server
-More info</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-24&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-
-
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
-
-              </div>
             </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/XML/">XML</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/XML相似度/">XML相似度</a>
+                    
+                  </span>
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+            </div>
+
+            
           </div>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -374,6 +332,57 @@ More info</div>
 
 
 
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var post = $('#post');
+      var toc = $('#toc');
+      var tocLimMax = post.offset().top + post.height() - navHeight;
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = $('#board-ctn').css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
 
 
 
@@ -413,7 +422,7 @@ More info</div>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "从荒无人烟走到繁花盛开&nbsp;",
+        "语义相似度的研究及其应用&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

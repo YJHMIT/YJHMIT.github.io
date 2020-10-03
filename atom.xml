@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-10-03T09:56:58.331Z</updated>
+  <updated>2020-10-03T14:32:20.588Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基于核矩阵学习的XML文档相似度量方法</title>
-    <link href="https://bestyangjh.com/2020/10/03/xml2/"/>
-    <id>https://bestyangjh.com/2020/10/03/xml2/</id>
-    <published>2020-10-03T08:53:03.000Z</published>
-    <updated>2020-10-03T09:56:58.331Z</updated>
+    <title>语义相似度的研究及其应用</title>
+    <link href="https://bestyangjh.com/2020/10/03/xml3/"/>
+    <id>https://bestyangjh.com/2020/10/03/xml3/</id>
+    <published>2020-10-03T11:57:16.000Z</published>
+    <updated>2020-10-03T14:32:20.588Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,35 @@
       
         
         
-          &lt;p&gt;第二篇已经读完有几天了，今天终于把第三篇也看完了，那么久一次性总结一下吧。&lt;/p&gt;
+          &lt;p&gt;#2020-10-03&lt;/p&gt;
+&lt;p&gt;基于编辑距离的同时考虑语义和结构的相似度算法，这篇paper其实很详细内容也非常的多，写得很清楚也举了例子说明真的非常适合我这种新手阅读了。以这篇论文结束我的第一次paper之行，对于我有个比较好的总结作用。&lt;/p&gt;
+&lt;p&gt;起初找到的最
+        
+      
+    
+    </summary>
+    
+      <category term="XML" scheme="https://bestyangjh.com/categories/XML/"/>
+    
+    
+      <category term="XML相似度" scheme="https://bestyangjh.com/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于核矩阵学习的XML文档相似度量方法</title>
+    <link href="https://bestyangjh.com/2020/10/02/xml2/"/>
+    <id>https://bestyangjh.com/2020/10/02/xml2/</id>
+    <published>2020-10-02T08:53:03.000Z</published>
+    <updated>2020-10-03T12:08:28.652Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;第二篇已经读完有几天了，今天终于把第三篇也看完了。写点东西记录一下，本篇重点：核矩阵迭代和传统的向量表示方法的相似度量&lt;/p&gt;
 &lt;h2 id=&quot;2020-10-2&quot;&gt;&lt;a href=&quot;#2020-10-2&quot; class=&quot;headerlink&quot;
         
       
@@ -76,7 +104,7 @@
     <link href="https://bestyangjh.com/2020/09/26/xml1/"/>
     <id>https://bestyangjh.com/2020/09/26/xml1/</id>
     <published>2020-09-26T06:23:29.000Z</published>
-    <updated>2020-10-03T09:49:58.027Z</updated>
+    <updated>2020-10-03T12:08:28.652Z</updated>
     
     <summary type="html">
     
@@ -520,33 +548,6 @@
         
           &lt;p&gt;发现新操作之后，重写一遍，企图搞事情&lt;/p&gt;
 &lt;h2 id=&quot;2020-04-15&quot;&gt;&lt;a href=&quot;#2020-04-15&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
-    
-      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秃头Tine的第一个锅</title>
-    <link href="https://bestyangjh.com/2020/04/12/hotel/"/>
-    <id>https://bestyangjh.com/2020/04/12/hotel/</id>
-    <published>2020-04-12T14:00:00.000Z</published>
-    <updated>2020-04-21T09:59:01.932Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;秃头Tine的第一个锅，必尽力而为&lt;/p&gt;
-&lt;h2 id=&quot;2020-04-12&quot;&gt;&lt;a href=&quot;#2020-04-12&quot; class=&quot;headerlink&quot;
         
       
     

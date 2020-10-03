@@ -16,7 +16,7 @@
   <meta name="description" content="南京邮电大学 |软件工程">
   <meta name="author" content="阳锦华">
   <meta name="keywords" content="阳锦华 biu~">
-  <title>Religion&#39;s Blog</title>
+  <title>基于核矩阵学习的XML文档相似度量方法 - Religion&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -41,7 +41,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -127,12 +127,42 @@
             </span>
 
             
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期五, 十月 2日 2020, 4:53 下午
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    817 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                      2 分钟
+                  </span>
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
+                    <i class="far fa-eye" aria-hidden="true"></i>
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>
+                
+              </p>
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
-            </div>
           
         </div>
       </div>
@@ -141,160 +171,80 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5 z-depth-3" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <p>第二篇已经读完有几天了，今天终于把第三篇也看完了。写点东西记录一下，本篇重点：核矩阵迭代和传统的向量表示方法的相似度量</p>
+<h2 id="2020-10-2"><a href="#2020-10-2" class="headerlink" title="#2020-10-2"></a>#2020-10-2</h2><p>其实应该早点写的，现在脑子里全是第三篇的算法，前面的内容还是遗忘了很多的。</p>
+<p>基于结构链接向量模型SLVM来计算其相似性，同时考虑到了结构性特征和内容信息，这篇提出了两种核矩阵的学习算法，<strong><em>基于支持向量机（SVM）的回归学习算法</em></strong>和<strong><em>基于矩阵迭代的学习算法</em></strong>。最后实验结果证明了匹配度最高的是核矩阵递归学习算法。</p>
+<p>VSM是NLP中常用的文档模型，做了一些笔记,词语形成高维空间，文档是空间中的一个向量。但是无法描述结构特征<img src="/2020/10/02/xml2/1.jpg" alt>所以使用SLVM把<strong>每个结构单元</strong>看做一个向量，就是类似于VSM模型中的文档看做向量，就是划分的程度变小了，整个文档用一组向量表示。就可以考虑进结构因素和内容因素在内了。</p>
+<p>对这两种模型都使用了TF-IDF传统算法来表示词语权重问题。</p>
+<p>VSM模型<img src="/2020/10/02/xml2/2.jpg" alt></p>
+<p>SLVM模型<img src="/2020/10/02/xml2/3.jpg" alt></p>
+<p>对于文档相似性的度量在本文中采用了余弦值度量法<img src="/2020/10/02/xml2/4.jpg" alt>M就是m*m的核矩阵，用来表示各结构之间的关系以及该结构对文本相似度的贡献权重。</p>
+<p>第一种，对前面给出的SLVM的模型进行变换<img src="/2020/10/02/xml2/6.jpg" alt>以支持向量机回归学习来计算核矩阵M<img src="/2020/10/02/xml2/7.jpg" alt>由于个人水平欠缺无法复现这个算法，只摸索了SVM的的计算方式<img src="/2020/10/02/xml2/5.jpg" alt></p>
+<p>第二种，假设对象实体本身之间的相似性与对象特征之间的相似性是相互依赖的<img src="/2020/10/02/xml2/8.jpg" alt>为了避免计算量过大，所以采用了迭代的方法求解特征间的相似矩阵<img src="/2020/10/02/xml2/9.jpg" alt></p>
+<p>紧接着对于SLVM的矩阵迭代算法就进入了复现部分<img src="/2020/10/02/xml2/10.jpg" alt></p>
+<p>总的说来就是，更换了传统的文本表示方法，从VSM–&gt;SLVM，类比得到新的计算文档间相似性的函数。此函数中引入了核矩阵M，那么又引出了两种计算核矩阵M的方法，一种是传统的支持向量机回归学习SVM，一种是基于矩阵迭代求解核矩阵M，此时在矩阵迭代的过程中又出现了对于初始值的要求，自然就分类成了有监督学习和无监督学习。即初始时是否有人工标注值。在实验证明过程中，采用Dice距离代替人工标注值，最后结果用KNN搜索对于相似度的评定准确性进行评价。最终证明基于矩阵迭代的核矩阵有监督学习方法对于文档的相似性度量最为准确。</p>
+<p>本文总结自《基于核矩阵学习的XML文档相似度量方法》 北京大学 杨建武，陈晓鸥</p>
+<p>知网被引量25次 软件学报</p>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/03/17/springboot1-0/" target="_self">
-          <img src="/img/background.jpg" alt="IDEA+Springboot输出Hello World"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/03/17/springboot1-0/">
-        <p class="h4 index-header">IDEA+Springboot输出Hello World</p>
-      </a>
-
-      <a href="/2020/03/17/springboot1-0/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">尝试系统和细节的使用springboot的第一步
-2020 03-17
-本次操作所需材料：*IDEA旗舰版(简单上手…
-IDEA神奇创建springboot项目，史上无敌讨厌的就是导包了。所以给各位摸到了一个自动导包的好方法。
-1.首先File-&gt;new-&gt;moudle,你会看到一个这亚子的界面
-2.然后正常下一步
-3.选择依赖，当然这可能是我初学一个很困扰的点，每次都不知道该选啥。,界面比较简单，就web就好了。
-4.然后我导包…嗯或许是版本跟不上的原因，也有time out这样的情况，所以
-5.导入maven依赖，这个也很强，添加了阿里镜像。首先，紧接着省事儿许多。
-6.害，这</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-17&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Springboot/">Springboot</a>&nbsp;
-          &nbsp;
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2019/11/24/first/" target="_self">
-          <img src="/img/background.jpg" alt="First"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2019/11/24/first/">
-        <p class="h4 index-header">First</p>
-      </a>
-
-      <a href="/2019/11/24/first/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"></div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-24&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2019/11/24/hello-world/" target="_self">
-          <img src="/img/background.jpg" alt="Hello World"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2019/11/24/hello-world/">
-        <p class="h4 index-header">Hello World</p>
-      </a>
-
-      <a href="/2019/11/24/hello-world/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
-More info: Writing
-Run server$ hexo server
-More info</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-24&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-
-
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
-
-              </div>
             </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/XML/">XML</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/XML相似度/">XML相似度</a>
+                    
+                  </span>
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+            </div>
+
+            
           </div>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -374,6 +324,57 @@ More info</div>
 
 
 
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var post = $('#post');
+      var toc = $('#toc');
+      var tocLimMax = post.offset().top + post.height() - navHeight;
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = $('#board-ctn').css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
 
 
 
@@ -413,7 +414,7 @@ More info</div>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "从荒无人烟走到繁花盛开&nbsp;",
+        "基于核矩阵学习的XML文档相似度量方法&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

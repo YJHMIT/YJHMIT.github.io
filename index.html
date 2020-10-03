@@ -155,33 +155,81 @@
     
     
       <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/10/03/xml2/" target="_self">
-          <img src="/img/background.jpg" alt="基于核矩阵学习的XML文档相似度量方法"
+        <a href="/2020/10/03/xml3/" target="_self">
+          <img src="/img/background.jpg" alt="语义相似度的研究及其应用"
                class="index-img img-fluid rounded index-thumbnails">
         </a>
       </div>
     
     <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/10/03/xml2/">
-        <p class="h4 index-header">基于核矩阵学习的XML文档相似度量方法</p>
+      <a href="/2020/10/03/xml3/">
+        <p class="h4 index-header">语义相似度的研究及其应用</p>
       </a>
 
-      <a href="/2020/10/03/xml2/">
+      <a href="/2020/10/03/xml3/">
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">第二篇已经读完有几天了，今天终于把第三篇也看完了，那么久一次性总结一下吧。
-#2020-10-2其实应该早点写的，现在脑子里全是第三篇的算法，前面的内容还是遗忘了很多的。
-基于结构链接向量模型SLVM来计算其相似性，同时考虑到了结构性特征和内容信息，这篇提出了两种核矩阵的学习算法，基于支持向量机（SVM）的回归学习算法和*基于矩阵迭代的学习算法。最后实验结果证明了匹配度最高的是核矩阵递归学习算法。
-VSM是NLP中常用的文档模型，做了一些笔记,词语形成高维空间，文档是空间中的一个向量。但是无法描述结构特征所以使用SLVM把每个结构单元看做一个向量，就是类似于VSM模型中的文档看做向量，就是划分</div>
+          <div class="index-text mb-1">#2020-10-03
+基于编辑距离的同时考虑语义和结构的相似度算法，这篇paper其实很详细内容也非常的多，写得很清楚也举了例子说明真的非常适合我这种新手阅读了。以这篇论文结束我的第一次paper之行，对于我有个比较好的总结作用。
+起初找到的最后一篇论文其实并不是这篇，所以导致了我最后又重新找了一篇论文。之前的那一篇是《基于加权余弦相似度的XML文档聚类研究》，在最初找论文的时候关注点太浅薄了，所以出现了偏差。读了两篇paper之后才开始有点感觉，逐渐通过abstract能判别本篇文章是不是适合我当下关注的问题。果然学习是需要循序渐进的吧。
+这篇博士论文非常详细，并且整份论文有一百八十几页，</div>
         </div>
       </a>
 
       <div class="index-btm">
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2020-10-03&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/XML/">XML</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/XML相似度/">XML相似度</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2020/10/02/xml2/" target="_self">
+          <img src="/img/background.jpg" alt="基于核矩阵学习的XML文档相似度量方法"
+               class="index-img img-fluid rounded index-thumbnails">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2020/10/02/xml2/">
+        <p class="h4 index-header">基于核矩阵学习的XML文档相似度量方法</p>
+      </a>
+
+      <a href="/2020/10/02/xml2/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">第二篇已经读完有几天了，今天终于把第三篇也看完了。写点东西记录一下，本篇重点：核矩阵迭代和传统的向量表示方法的相似度量
+#2020-10-2其实应该早点写的，现在脑子里全是第三篇的算法，前面的内容还是遗忘了很多的。
+基于结构链接向量模型SLVM来计算其相似性，同时考虑到了结构性特征和内容信息，这篇提出了两种核矩阵的学习算法，基于支持向量机（SVM）的回归学习算法和基于矩阵迭代的学习算法。最后实验结果证明了匹配度最高的是核矩阵递归学习算法。
+VSM是NLP中常用的文档模型，做了一些笔记,词语形成高维空间，文档是空间中的一个向量。但是无法描述结构特征所以使用SLVM把每个结构单元看做一个向量，就是</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-10-02&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
@@ -672,55 +720,6 @@ logsitic算法实际是一种分类算法。比如在监督学习中某些有固
 代价函数(cost function)
 要计算出J(θ)以及其偏导，如果采用梯度下降法，则产生这样的公式
 如果不需要自己编写算法测试收敛性的话，这里提供到一些高级算法来求解这两个值。共轭梯度法（BFGS）和L-BFGS（限制变尺度法）。他们拥有一个智能的内部循环称为线性搜索算法，所以不需要alpha。比梯度下降快很多。但是非常复杂。在Octave中，我们采用了如图两段代码来计算J(θ）的</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-07-21&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Machine-Learning/">Machine Learning</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/ML-base/">ML base</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto">
-        <a href="/2020/07/21/task2/" target="_self">
-          <img src="/img/background.jpg" alt="多元线性拟合以及Octave的使用"
-               class="index-img img-fluid rounded index-thumbnails">
-        </a>
-      </div>
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2020/07/21/task2/">
-        <p class="h4 index-header">多元线性拟合以及Octave的使用</p>
-      </a>
-
-      <a href="/2020/07/21/task2/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">#07-19
-进阶学习，上一篇笔记介绍了n，n个特征变量的情况较为复杂，以x(i)来表示特征量，则产生与之相匹配的的theta（i),假设出x(0)恒等于1，则我们得到两个向量集，此时的假设函数h就可以写成，x的转置乘以seta的向量集。
-代价函数的表达形式也出现相应的变化。
-此处介绍一个特征选择方法，比如已知frontage和deepth，我们可以直接把两个特征量转化为area一个特征量，即可实现减少特征量的目的，通过除以max，可以使得特征归一，就是特征量的数据在同一个范围内。不使用特征缩放会导致梯度下降很难运行。
-也可以使用特征归一化。或者调整学习速率alpha，每一次的迭代都造成set</div>
         </div>
       </a>
 
