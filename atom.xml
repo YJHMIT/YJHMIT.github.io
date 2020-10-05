@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-10-03T14:32:20.588Z</updated>
+  <updated>2020-10-05T08:35:19.223Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Life likes Fire</title>
+    <link href="https://bestyangjh.com/2020/10/05/summary/"/>
+    <id>https://bestyangjh.com/2020/10/05/summary/</id>
+    <published>2020-10-05T07:36:17.000Z</published>
+    <updated>2020-10-05T08:35:19.223Z</updated>
+    
+    <summary type="html">
+    
+      这是加密的哟~
+    
+    </summary>
+    
+      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>语义相似度的研究及其应用</title>
@@ -519,33 +539,6 @@
         
           &lt;p&gt;发现新操作之后，重写一遍，企图搞事情&lt;/p&gt;
 &lt;h2 id=&quot;2020-04-15&quot;&gt;&lt;a href=&quot;#2020-04-15&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
-    
-      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秃头Tine的第一个锅</title>
-    <link href="https://bestyangjh.com/2020/04/12/hotel/"/>
-    <id>https://bestyangjh.com/2020/04/12/hotel/</id>
-    <published>2020-04-12T14:00:00.000Z</published>
-    <updated>2020-04-21T09:59:01.932Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;秃头Tine的第一个锅，必尽力而为&lt;/p&gt;
-&lt;h2 id=&quot;2020-04-12&quot;&gt;&lt;a href=&quot;#2020-04-12&quot; class=&quot;headerlink&quot;
         
       
     
