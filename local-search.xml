@@ -8,7 +8,7 @@
     <link href="/2020/10/10/newpy/"/>
     <url>/2020/10/10/newpy/</url>
     
-    <content type="html"><![CDATA[<p>毕竟我蒟蒻。。构建，调试和优化都花了比较长的时间。当然建议大家自行解决了。</p><p>#10-10</p><p>最开始的时候看了很多别人的源码啊，就是之前的大佬们整出来的东西，但是好长好长，总是没耐心看完，毕竟说实话，代码风格多样，行数又多，函数板块也不少，就很零散（还没注释）。不得不说，读程真的绝了….</p><p>后来摸索摸索就开始自己写，最开始明确了一下函数板块吧，现在还不是很会markdown画图。。。</p><p>flow<br>st=&gt;start: 读入命题公式的字符串<br>op=&gt;operation: Your Operation<br>cond=&gt;condition: Yes or No?<br>e=&gt;end<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op</p>]]></content>
+    <content type="html"><![CDATA[<p>毕竟我蒟蒻。。构建，调试和优化都花了比较长的时间。当然建议大家自行解决了。</p><p>#10-10</p><p>最开始的时候看了很多别人的源码啊，就是之前的大佬们整出来的东西，但是好长好长，总是没耐心看完，毕竟说实话，代码风格多样，行数又多，函数板块也不少，就很零散（还没注释）。不得不说，读程真的绝了….</p><p>后来摸索摸索就开始自己写，最开始明确了一下函数板块吧，现在还不是很会markdown画图。。。</p><pre class="line-numbers language-mermaid"><code class="language-mermaid">flowchatst=>start: 读入命题公式的字符串op1=>operation: 预处理op2=>operation: 得到真值表的行列数op3=>operation: 利用栈得出基本命题的真值表op4=>operation: 对命题公式进行计算并且打出真值表op5=>operation: 用TF替换公式中的命题op6=>operation: 输出单个命题的真值表op7=>operation: 中缀转后缀op8=>operation: 计算后缀式（把字符转换回布尔）op9=>operation: 输出命题公式对应的真值op10=>operation: 设计算法计算合取析取范式e=>endst->op1->op2->op3->op4(right)->op5->op6->op7->op8(left)->op9->op10->e<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
     
     
     <categories>
@@ -20,7 +20,7 @@
     
     <tags>
       
-      <tag>随笔</tag>
+      <tag>实验</tag>
       
     </tags>
     
