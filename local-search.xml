@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>离散实验</title>
+    <link href="/2020/10/10/newpy/"/>
+    <url>/2020/10/10/newpy/</url>
+    
+    <content type="html"><![CDATA[<p>毕竟我蒟蒻。。构建，调试和优化都花了比较长的时间。当然建议大家自行解决了。</p><p>#10-10</p><p>最开始的时候看了很多别人的源码啊，就是之前的大佬们整出来的东西，但是好长好长，总是没耐心看完，毕竟说实话，代码风格多样，行数又多，函数板块也不少，就很零散（还没注释）。不得不说，读程真的绝了….</p><p>后来摸索摸索就开始自己写，最开始明确了一下函数板块吧，现在还不是很会markdown画图。。。</p><pre><code>flowst=&gt;start: 读入命题公式的字符串op=&gt;operation: Your Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Life likes Fire</title>
     <link href="/2020/10/05/summary/"/>
     <url>/2020/10/05/summary/</url>
