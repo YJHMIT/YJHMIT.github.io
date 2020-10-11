@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bestyangjh.com/2020/10/10/newpy/</loc>
+    
+    <lastmod>2020-10-11T02:06:48.551Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bestyangjh.com/2020/03/29/springboot3-0/</loc>
     
     <lastmod>2020-10-10T12:36:52.730Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://bestyangjh.com/2020/10/05/summary/</loc>
     
     <lastmod>2020-10-10T12:35:06.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bestyangjh.com/2020/10/10/newpy/</loc>
-    
-    <lastmod>2020-10-10T11:43:36.266Z</lastmod>
     
   </url>
   
@@ -177,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://bestyangjh.com/2020/03/17/springboot1-0/</loc>
+    <loc>https://bestyangjh.com/2020/03/22/springboot2-0/</loc>
     
     <lastmod>2020-03-30T11:23:32.574Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bestyangjh.com/2020/03/22/springboot2-0/</loc>
+    <loc>https://bestyangjh.com/2020/03/17/springboot1-0/</loc>
     
     <lastmod>2020-03-30T11:23:32.574Z</lastmod>
     
