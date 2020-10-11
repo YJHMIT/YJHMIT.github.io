@@ -147,7 +147,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      5 分钟
+                      6 分钟
                   </span>
                 
 
@@ -182,7 +182,7 @@
           <div class="post-content mx-auto" id="post">
             
               <p
-                class="note note-warning">本文最后更新于：星期日, 十月 11日 2020, 1:13 下午</p>
+                class="note note-warning">本文最后更新于：星期日, 十月 11日 2020, 1:14 下午</p>
             
             <div class="markdown-body">
               <p>毕竟我蒟蒻。。构建，调试和优化都花了比较长的时间。当然建议大家自行解决了。</p>
@@ -191,20 +191,9 @@
 <p>后来摸索摸索就开始自己写，还有前人的思路前期点拨一把，行动起来快了很多。最开始明确了一下函数板块吧，预处理命题公式，得到输出真值表的行列数，我后期调用了<strong>堆栈</strong>去解决美观输出真值表的问题。紧接着请把命题依次<strong>用TF</strong>替换掉，便于后期后缀计算。然后就是数据结构里讲过的，<strong>中缀转后缀</strong>，不多说了，在后缀计算里，应该注意把<strong>TF又转换为10</strong>来计算最后的真值，再次调用<strong>10转TF</strong>得到命题公式的真值表。最后根据真值表就整两个循环把主析取范式和主合取范式搞出来了。</p>
 <p>现在还不是很会markdown画图。。。</p>
 <p>啧半个多小时过去了，为了给出一个更好的呈现呢，又把markdown绘制框图学了一下。编辑器里还差点插件，查缺补漏的又整了一下。凑合看吧有点丑，其实只是想说明顺序罢了。</p>
-<pre><code>st=&gt;start: 读入命题公式的字符串
-op1=&gt;operation: 预处理
-op2=&gt;operation: 得到真值表的行列数
-op3=&gt;operation: 利用栈得出基本命题的真值表
-op4=&gt;operation: 对命题公式进行计算并且打出真值表
-op5=&gt;operation: 用TF替换公式中的命题
-op6=&gt;operation: 输出单个命题的真值表
-op7=&gt;operation: 中缀转后缀
-op8=&gt;operation: 计算后缀式（把字符转换回布尔）
-op9=&gt;operation: 输出命题公式对应的真值
-op10=&gt;operation: 设计算法计算合取析取范式
-cond=&gt;condition: first or then?
-e=&gt;end
-st-&gt;op1-&gt;op2-&gt;op3-&gt;op4-&gt;op5-&gt;op6-&gt;op7-&gt;op8-&gt;op9-&gt;op10-&gt;e</code></pre><p>主函数中输出真值表的时候，为了输出正常格式的TF，确实花了不少时间去优化，本身的代码没问题，主要是为了好看（bushi…</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<p>主函数中输出真值表的时候，为了输出正常格式的TF，确实花了不少时间去优化，本身的代码没问题，主要是为了好看（bushi…</p>
 <p>最开始走了不少弯路，代码分块实现之后，就是无法衔接在一起。是大佬点拨一番才领悟到最开始的方向有问题的。好在分块实现其实跟大佬的逻辑相差不多，还在此基础上优化了一番，算作满意。</p>
 <p>总的说来，转换思想非常非常重要，循环的使用和栈的使用也必不可少。只放主函数，后期等离散结束了代码同步更新至github，感谢各路大佬的倾情奉献.</p>
 <pre><code>int main()
@@ -306,7 +295,20 @@ st-&gt;op1-&gt;op2-&gt;op3-&gt;op4-&gt;op5-&gt;op6-&gt;op7-&gt;op8-&gt;op9-&gt;o
     }
     cout &lt;&lt; endl;
     return 0;
-}</code></pre>
+}</code></pre><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 读入命题公式的字符串
+op1=>operation: 预处理
+op2=>operation: 得到真值表的行列数
+op3=>operation: 利用栈得出基本命题的真值表
+op4=>operation: 对命题公式进行计算并且打出真值表
+op5=>operation: 用TF替换公式中的命题
+op6=>operation: 输出单个命题的真值表
+op7=>operation: 中缀转后缀
+op8=>operation: 计算后缀式（把字符转换回布尔）
+op9=>operation: 输出命题公式对应的真值
+op10=>operation: 设计算法计算合取析取范式
+cond=>condition: first or then?
+e=>end
+st->op1->op2->op3->op4->op5->op6->op7->op8->op9->op10->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>
             </div>
             <hr>
             <div>
