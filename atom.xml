@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bestyangjh.com/"/>
-  <updated>2020-10-11T05:14:48.342Z</updated>
+  <updated>2020-10-11T05:17:47.745Z</updated>
   <id>https://bestyangjh.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://bestyangjh.com/2020/10/11/ls2/"/>
     <id>https://bestyangjh.com/2020/10/11/ls2/</id>
     <published>2020-10-11T05:09:54.000Z</published>
-    <updated>2020-10-11T05:14:48.342Z</updated>
+    <updated>2020-10-11T05:17:47.745Z</updated>
     
     <summary type="html">
     
@@ -37,34 +37,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>离散实验</title>
-    <link href="https://bestyangjh.com/2020/10/10/newpy/"/>
-    <id>https://bestyangjh.com/2020/10/10/newpy/</id>
-    <published>2020-10-10T08:40:02.000Z</published>
-    <updated>2020-10-11T02:46:05.327Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;毕竟我蒟蒻。。构建，调试和优化都花了比较长的时间。当然建议大家自行解决了。&lt;/p&gt;
-&lt;p&gt;#10-10&lt;/p&gt;
-&lt;p&gt;最开始的时候看了很多别人的源码啊，就是之前的大佬们整出来的东西，但是好长好长，总是没耐心看完，毕竟说实话，代码风格多样，行数又多，函数板块也不少，就很零散（
-        
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="实验" scheme="https://bestyangjh.com/tags/%E5%AE%9E%E9%AA%8C/"/>
     
   </entry>
   
@@ -543,6 +515,36 @@
     
     
       <category term="Linux" scheme="https://bestyangjh.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>秃头Tine的锅3.0</title>
+    <link href="https://bestyangjh.com/2020/04/21/hotel-3/"/>
+    <id>https://bestyangjh.com/2020/04/21/hotel-3/</id>
+    <published>2020-04-21T08:49:20.000Z</published>
+    <updated>2020-04-24T07:45:05.896Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;吐血完成，此篇是反思和总结&lt;/p&gt;
+&lt;p&gt;#代码历程&lt;/p&gt;
+&lt;p&gt;##04-12&lt;/p&gt;
+&lt;p&gt;这是第一次接入这个实战的HAdmin，看看一路走了多少坑，心脏病都快吓出来了。&lt;/p&gt;
+&lt;p&gt;在接到的第二天一早，没有匆匆忙忙登录进模板，只看了大概，连增删，按键，功能都没看就
+        
+      
+    
+    </summary>
+    
+      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
+    
+    
+      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
     
   </entry>
   
