@@ -22,6 +22,7 @@ https://bestyangjh.com/2020/04/15/hotel-2/
 https://bestyangjh.com/2020/04/12/hotel/
 https://bestyangjh.com/2020/04/10/login/
 https://bestyangjh.com/2020/04/08/spider/
+https://bestyangjh.com/2020/03/29/springboot3-0/
 https://bestyangjh.com/2020/03/22/springboot2-0/
 https://bestyangjh.com/2020/03/17/springboot1-0/
 https://bestyangjh.com/2019/11/24/first/
