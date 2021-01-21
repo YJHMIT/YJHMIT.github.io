@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>PyTorch第一弹</title>
+    <link href="/2020/10/12/np1/"/>
+    <url>/2020/10/12/np1/</url>
+    
+    <content type="html"><![CDATA[<p>好歹Ng的课走完了大部分了，SVM模型，人工神经网络，决策树，贝叶斯推断，提升模型，协同算法balabala…现在呢是时候进入下一步了…</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Machine Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PyTorch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>离散实验一</title>
     <link href="/2020/10/11/ls2/"/>
     <url>/2020/10/11/ls2/</url>

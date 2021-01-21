@@ -5,9 +5,9 @@
   <subtitle>从荒无人烟走到繁花盛开</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://bestyangjh.com/"/>
-  <updated>2020-10-11T05:17:47.745Z</updated>
-  <id>https://bestyangjh.com/</id>
+  <link href="https://yjhmit.github.io/"/>
+  <updated>2020-10-16T08:06:10.123Z</updated>
+  <id>https://yjhmit.github.io/</id>
   
   <author>
     <name>阳锦华</name>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PyTorch第一弹</title>
+    <link href="https://yjhmit.github.io/2020/10/12/np1/"/>
+    <id>https://yjhmit.github.io/2020/10/12/np1/</id>
+    <published>2020-10-12T11:00:01.000Z</published>
+    <updated>2020-10-16T08:06:10.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;好歹Ng的课走完了大部分了，SVM模型，人工神经网络，决策树，贝叶斯推断，提升模型，协同算法balabala…现在呢是时候进入下一步了…&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
+    
+    
+      <category term="PyTorch" scheme="https://yjhmit.github.io/tags/PyTorch/"/>
+    
+  </entry>
+  
+  <entry>
     <title>离散实验一</title>
-    <link href="https://bestyangjh.com/2020/10/11/ls2/"/>
-    <id>https://bestyangjh.com/2020/10/11/ls2/</id>
+    <link href="https://yjhmit.github.io/2020/10/11/ls2/"/>
+    <id>https://yjhmit.github.io/2020/10/11/ls2/</id>
     <published>2020-10-11T05:09:54.000Z</published>
     <updated>2020-10-11T05:17:47.745Z</updated>
     
@@ -42,8 +69,8 @@
   
   <entry>
     <title>Life likes Fire</title>
-    <link href="https://bestyangjh.com/2020/10/05/summary/"/>
-    <id>https://bestyangjh.com/2020/10/05/summary/</id>
+    <link href="https://yjhmit.github.io/2020/10/05/summary/"/>
+    <id>https://yjhmit.github.io/2020/10/05/summary/</id>
     <published>2020-10-05T07:36:17.000Z</published>
     <updated>2020-10-10T12:35:06.144Z</updated>
     
@@ -53,17 +80,17 @@
     
     </summary>
     
-      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://yjhmit.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://yjhmit.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>语义相似度的研究及其应用</title>
-    <link href="https://bestyangjh.com/2020/10/03/xml3/"/>
-    <id>https://bestyangjh.com/2020/10/03/xml3/</id>
+    <link href="https://yjhmit.github.io/2020/10/03/xml3/"/>
+    <id>https://yjhmit.github.io/2020/10/03/xml3/</id>
     <published>2020-10-03T11:57:16.000Z</published>
     <updated>2020-10-11T05:09:15.406Z</updated>
     
@@ -81,17 +108,17 @@
     
     </summary>
     
-      <category term="XML" scheme="https://bestyangjh.com/categories/XML/"/>
+      <category term="XML" scheme="https://yjhmit.github.io/categories/XML/"/>
     
     
-      <category term="XML相似度" scheme="https://bestyangjh.com/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+      <category term="XML相似度" scheme="https://yjhmit.github.io/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>基于核矩阵学习的XML文档相似度量方法</title>
-    <link href="https://bestyangjh.com/2020/10/02/xml2/"/>
-    <id>https://bestyangjh.com/2020/10/02/xml2/</id>
+    <link href="https://yjhmit.github.io/2020/10/02/xml2/"/>
+    <id>https://yjhmit.github.io/2020/10/02/xml2/</id>
     <published>2020-10-02T08:53:03.000Z</published>
     <updated>2020-10-03T12:08:28.652Z</updated>
     
@@ -108,17 +135,17 @@
     
     </summary>
     
-      <category term="XML" scheme="https://bestyangjh.com/categories/XML/"/>
+      <category term="XML" scheme="https://yjhmit.github.io/categories/XML/"/>
     
     
-      <category term="XML相似度" scheme="https://bestyangjh.com/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+      <category term="XML相似度" scheme="https://yjhmit.github.io/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>XML数据相似度的研究</title>
-    <link href="https://bestyangjh.com/2020/09/26/xml1/"/>
-    <id>https://bestyangjh.com/2020/09/26/xml1/</id>
+    <link href="https://yjhmit.github.io/2020/09/26/xml1/"/>
+    <id>https://yjhmit.github.io/2020/09/26/xml1/</id>
     <published>2020-09-26T06:23:29.000Z</published>
     <updated>2020-10-03T12:08:28.652Z</updated>
     
@@ -135,17 +162,17 @@
     
     </summary>
     
-      <category term="XML" scheme="https://bestyangjh.com/categories/XML/"/>
+      <category term="XML" scheme="https://yjhmit.github.io/categories/XML/"/>
     
     
-      <category term="XML相似度" scheme="https://bestyangjh.com/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+      <category term="XML相似度" scheme="https://yjhmit.github.io/tags/XML%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>TF-IDF</title>
-    <link href="https://bestyangjh.com/2020/09/26/tf-idf/"/>
-    <id>https://bestyangjh.com/2020/09/26/tf-idf/</id>
+    <link href="https://yjhmit.github.io/2020/09/26/tf-idf/"/>
+    <id>https://yjhmit.github.io/2020/09/26/tf-idf/</id>
     <published>2020-09-26T01:36:23.000Z</published>
     <updated>2020-10-03T09:49:58.028Z</updated>
     
@@ -162,17 +189,17 @@
     
     </summary>
     
-      <category term="统计方法" scheme="https://bestyangjh.com/categories/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95/"/>
+      <category term="统计方法" scheme="https://yjhmit.github.io/categories/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95/"/>
     
     
-      <category term="相似性学习" scheme="https://bestyangjh.com/tags/%E7%9B%B8%E4%BC%BC%E6%80%A7%E5%AD%A6%E4%B9%A0/"/>
+      <category term="相似性学习" scheme="https://yjhmit.github.io/tags/%E7%9B%B8%E4%BC%BC%E6%80%A7%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>如何筛选和改进算法</title>
-    <link href="https://bestyangjh.com/2020/09/16/ml1/"/>
-    <id>https://bestyangjh.com/2020/09/16/ml1/</id>
+    <link href="https://yjhmit.github.io/2020/09/16/ml1/"/>
+    <id>https://yjhmit.github.io/2020/09/16/ml1/</id>
     <published>2020-09-16T08:39:49.000Z</published>
     <updated>2020-10-03T17:08:04.193Z</updated>
     
@@ -189,17 +216,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+      <category term="ML base" scheme="https://yjhmit.github.io/tags/ML-base/"/>
     
   </entry>
   
   <entry>
     <title>ex1</title>
-    <link href="https://bestyangjh.com/2020/08/01/ex1/"/>
-    <id>https://bestyangjh.com/2020/08/01/ex1/</id>
+    <link href="https://yjhmit.github.io/2020/08/01/ex1/"/>
+    <id>https://yjhmit.github.io/2020/08/01/ex1/</id>
     <published>2020-08-01T01:47:04.000Z</published>
     <updated>2020-08-01T08:11:27.687Z</updated>
     
@@ -217,17 +244,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML ex" scheme="https://bestyangjh.com/tags/ML-ex/"/>
+      <category term="ML ex" scheme="https://yjhmit.github.io/tags/ML-ex/"/>
     
   </entry>
   
   <entry>
     <title>numpy1</title>
-    <link href="https://bestyangjh.com/2020/07/25/numpy1/"/>
-    <id>https://bestyangjh.com/2020/07/25/numpy1/</id>
+    <link href="https://yjhmit.github.io/2020/07/25/numpy1/"/>
+    <id>https://yjhmit.github.io/2020/07/25/numpy1/</id>
     <published>2020-07-25T03:47:13.000Z</published>
     <updated>2020-07-26T04:36:49.470Z</updated>
     
@@ -246,17 +273,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="NumPy" scheme="https://bestyangjh.com/tags/NumPy/"/>
+      <category term="NumPy" scheme="https://yjhmit.github.io/tags/NumPy/"/>
     
   </entry>
   
   <entry>
     <title>神经网络的代价函数</title>
-    <link href="https://bestyangjh.com/2020/07/24/nw/"/>
-    <id>https://bestyangjh.com/2020/07/24/nw/</id>
+    <link href="https://yjhmit.github.io/2020/07/24/nw/"/>
+    <id>https://yjhmit.github.io/2020/07/24/nw/</id>
     <published>2020-07-24T15:57:57.000Z</published>
     <updated>2020-07-25T03:47:34.696Z</updated>
     
@@ -273,17 +300,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML stage1" scheme="https://bestyangjh.com/tags/ML-stage1/"/>
+      <category term="ML stage1" scheme="https://yjhmit.github.io/tags/ML-stage1/"/>
     
   </entry>
   
   <entry>
     <title>神经网络</title>
-    <link href="https://bestyangjh.com/2020/07/24/neural/"/>
-    <id>https://bestyangjh.com/2020/07/24/neural/</id>
+    <link href="https://yjhmit.github.io/2020/07/24/neural/"/>
+    <id>https://yjhmit.github.io/2020/07/24/neural/</id>
     <published>2020-07-24T15:28:24.000Z</published>
     <updated>2020-07-24T15:57:34.574Z</updated>
     
@@ -302,17 +329,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML stage1" scheme="https://bestyangjh.com/tags/ML-stage1/"/>
+      <category term="ML stage1" scheme="https://yjhmit.github.io/tags/ML-stage1/"/>
     
   </entry>
   
   <entry>
     <title>正则化</title>
-    <link href="https://bestyangjh.com/2020/07/24/task3/"/>
-    <id>https://bestyangjh.com/2020/07/24/task3/</id>
+    <link href="https://yjhmit.github.io/2020/07/24/task3/"/>
+    <id>https://yjhmit.github.io/2020/07/24/task3/</id>
     <published>2020-07-24T14:51:23.000Z</published>
     <updated>2020-07-24T15:27:28.606Z</updated>
     
@@ -330,17 +357,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+      <category term="ML base" scheme="https://yjhmit.github.io/tags/ML-base/"/>
     
   </entry>
   
   <entry>
     <title>logistic回归算法</title>
-    <link href="https://bestyangjh.com/2020/07/21/logsitic/"/>
-    <id>https://bestyangjh.com/2020/07/21/logsitic/</id>
+    <link href="https://yjhmit.github.io/2020/07/21/logsitic/"/>
+    <id>https://yjhmit.github.io/2020/07/21/logsitic/</id>
     <published>2020-07-21T03:22:24.000Z</published>
     <updated>2020-07-21T11:36:15.152Z</updated>
     
@@ -358,17 +385,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+      <category term="ML base" scheme="https://yjhmit.github.io/tags/ML-base/"/>
     
   </entry>
   
   <entry>
     <title>多元线性拟合以及Octave的使用</title>
-    <link href="https://bestyangjh.com/2020/07/21/task2/"/>
-    <id>https://bestyangjh.com/2020/07/21/task2/</id>
+    <link href="https://yjhmit.github.io/2020/07/21/task2/"/>
+    <id>https://yjhmit.github.io/2020/07/21/task2/</id>
     <published>2020-07-21T02:34:06.000Z</published>
     <updated>2020-07-24T15:55:53.658Z</updated>
     
@@ -386,17 +413,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+      <category term="ML base" scheme="https://yjhmit.github.io/tags/ML-base/"/>
     
   </entry>
   
   <entry>
     <title>ML初识</title>
-    <link href="https://bestyangjh.com/2020/07/16/task/"/>
-    <id>https://bestyangjh.com/2020/07/16/task/</id>
+    <link href="https://yjhmit.github.io/2020/07/16/task/"/>
+    <id>https://yjhmit.github.io/2020/07/16/task/</id>
     <published>2020-07-16T13:13:29.000Z</published>
     <updated>2020-09-16T10:57:26.596Z</updated>
     
@@ -414,17 +441,17 @@
     
     </summary>
     
-      <category term="Machine Learning" scheme="https://bestyangjh.com/categories/Machine-Learning/"/>
+      <category term="Machine Learning" scheme="https://yjhmit.github.io/categories/Machine-Learning/"/>
     
     
-      <category term="ML base" scheme="https://bestyangjh.com/tags/ML-base/"/>
+      <category term="ML base" scheme="https://yjhmit.github.io/tags/ML-base/"/>
     
   </entry>
   
   <entry>
     <title>back</title>
-    <link href="https://bestyangjh.com/2020/07/16/back/"/>
-    <id>https://bestyangjh.com/2020/07/16/back/</id>
+    <link href="https://yjhmit.github.io/2020/07/16/back/"/>
+    <id>https://yjhmit.github.io/2020/07/16/back/</id>
     <published>2020-07-16T02:39:44.000Z</published>
     <updated>2020-07-25T03:47:35.199Z</updated>
     
@@ -434,17 +461,17 @@
     
     </summary>
     
-      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://yjhmit.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://yjhmit.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>failed</title>
-    <link href="https://bestyangjh.com/2020/05/09/falied/"/>
-    <id>https://bestyangjh.com/2020/05/09/falied/</id>
+    <link href="https://yjhmit.github.io/2020/05/09/falied/"/>
+    <id>https://yjhmit.github.io/2020/05/09/falied/</id>
     <published>2020-05-09T02:37:02.000Z</published>
     <updated>2020-07-16T09:50:28.437Z</updated>
     
@@ -454,17 +481,17 @@
     
     </summary>
     
-      <category term="生活" scheme="https://bestyangjh.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://yjhmit.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="随笔" scheme="https://bestyangjh.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://yjhmit.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>Linux2.0</title>
-    <link href="https://bestyangjh.com/2020/05/05/linux2-0/"/>
-    <id>https://bestyangjh.com/2020/05/05/linux2-0/</id>
+    <link href="https://yjhmit.github.io/2020/05/05/linux2-0/"/>
+    <id>https://yjhmit.github.io/2020/05/05/linux2-0/</id>
     <published>2020-05-05T08:11:17.000Z</published>
     <updated>2020-05-09T02:35:20.856Z</updated>
     
@@ -482,17 +509,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://bestyangjh.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://yjhmit.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="https://bestyangjh.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://yjhmit.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Linux1.0</title>
-    <link href="https://bestyangjh.com/2020/04/24/linux/"/>
-    <id>https://bestyangjh.com/2020/04/24/linux/</id>
+    <link href="https://yjhmit.github.io/2020/04/24/linux/"/>
+    <id>https://yjhmit.github.io/2020/04/24/linux/</id>
     <published>2020-04-24T01:43:12.000Z</published>
     <updated>2020-05-10T07:56:38.931Z</updated>
     
@@ -511,40 +538,10 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://bestyangjh.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://yjhmit.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="https://bestyangjh.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秃头Tine的锅3.0</title>
-    <link href="https://bestyangjh.com/2020/04/21/hotel-3/"/>
-    <id>https://bestyangjh.com/2020/04/21/hotel-3/</id>
-    <published>2020-04-21T08:49:20.000Z</published>
-    <updated>2020-04-24T07:45:05.896Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;吐血完成，此篇是反思和总结&lt;/p&gt;
-&lt;p&gt;#代码历程&lt;/p&gt;
-&lt;p&gt;##04-12&lt;/p&gt;
-&lt;p&gt;这是第一次接入这个实战的HAdmin，看看一路走了多少坑，心脏病都快吓出来了。&lt;/p&gt;
-&lt;p&gt;在接到的第二天一早，没有匆匆忙忙登录进模板，只看了大概，连增删，按键，功能都没看就
-        
-      
-    
-    </summary>
-    
-      <category term="Springboot" scheme="https://bestyangjh.com/categories/Springboot/"/>
-    
-    
-      <category term="task1" scheme="https://bestyangjh.com/tags/task1/"/>
+      <category term="Linux" scheme="https://yjhmit.github.io/tags/Linux/"/>
     
   </entry>
   
